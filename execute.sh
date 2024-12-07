@@ -17,9 +17,9 @@ echo "Started rcssserver3d with PID $!"
 sh src/robotViz/bin/roboviz.sh &
 echo "Started roboviz.sh with PID $!"
 
-# Start the third command
-(cd src && python3 Run_One_vs_One.py) &
-echo "Started Run_One_vs_One.py with PID $!"
+# # Start the third command
+# (cd src && python3 main.py) &
+# echo "Started main.py with PID $!"
 
 # Wait indefinitely to keep the parent process alive
 echo "Parent process running. Press Ctrl+C to terminate."
