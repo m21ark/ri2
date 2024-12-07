@@ -25,3 +25,4 @@ echo "Started roboviz.sh with PID $!"
 echo "Parent process running. Press Ctrl+C to terminate."
 wait
 
+kill -9 $(ps -e | grep rcssserver3d | awk '{print $1}')

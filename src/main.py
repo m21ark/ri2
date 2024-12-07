@@ -5,13 +5,13 @@ import threading
 
 def attacker_loop():
   while True:
-    attacker.scom.receive()
     attacker.think_and_send()
+    attacker.scom.receive()
     
 def defender_loop():
     while True:
-        defender.scom.receive()
         defender.think_and_send()
+        defender.scom.receive()
         
         
 def main():
