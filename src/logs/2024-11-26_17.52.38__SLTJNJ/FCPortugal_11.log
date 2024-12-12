@@ -1,0 +1,1616 @@
+{Tue 17:52:42 Step:2} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 17:52:42 Step:6} Server_Comm.py: The agent lost 3 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:13} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:21} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:28} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:28} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:43 Step:34} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:41} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:48} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:54} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:43 Step:60} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:67} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:74} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:80} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:87} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:87} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:44 Step:96} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:102} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:102} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:44 Step:109} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:44 Step:109} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:45 Step:118} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:52:45 Step:128} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:52:45 Step:137} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:52:45 Step:137} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:45 Step:148} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:52:45 Step:157} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:52:45 Step:157} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:46 Step:169} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:52:46 Step:178} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:52:46 Step:178} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:46 Step:193} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:52:46 Step:193} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:46 Step:204} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:52:47 Step:216} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:52:47 Step:225} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:52:47 Step:239} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:47 Step:239} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:47 Step:257} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:52:47 Step:257} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:48 Step:268} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:275} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:282} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:282} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:48 Step:288} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:288} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:48 Step:294} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:301} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:308} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:48 Step:308} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:49 Step:315} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:52:49 Step:315} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:49 Step:324} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:52:49 Step:324} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:49 Step:337} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:52:49 Step:337} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:49 Step:353} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:52:50 Step:366} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:52:50 Step:366} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:50 Step:380} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:50 Step:380} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:50 Step:395} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:50 Step:395} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:51 Step:411} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:52:51 Step:411} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:51 Step:423} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:52:51 Step:438} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:52:52 Step:461} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:52:52 Step:461} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:52 Step:479} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:52:52 Step:496} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:52:53 Step:517} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:52:53 Step:517} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:53 Step:518} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:53 Step:542} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:52:54 Step:566} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:52:54 Step:592} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:52:54 Step:592} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:55 Step:623} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:52:55 Step:648} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:52:55 Step:648} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:56 Step:669} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:52:56 Step:669} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:56 Step:684} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:52:56 Step:684} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:56 Step:698} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:52:57 Step:712} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:57 Step:712} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:57 Step:724} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:52:57 Step:724} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:57 Step:736} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:52:57 Step:736} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:57 Step:749} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:52:57 Step:749} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:58 Step:767} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:52:58 Step:781} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:58 Step:795} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:59 Step:807} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:52:59 Step:807} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:52:59 Step:821} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:52:59 Step:821} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:52:59 Step:835} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:52:59 Step:850} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:00 Step:867} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:00 Step:867} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:00 Step:880} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:00 Step:892} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:00 Step:892} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:00 Step:905} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:01 Step:905} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:01 Step:917} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:01 Step:917} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:01 Step:930} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:01 Step:930} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:01 Step:951} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:01 Step:951} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:02 Step:973} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:02 Step:973} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:02 Step:993} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:02 Step:993} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:03 Step:1011} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:03 Step:1011} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:03 Step:1026} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:03 Step:1026} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:03 Step:1038} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:03 Step:1038} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:03 Step:1039} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:04 Step:1057} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:04 Step:1076} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:04 Step:1095} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:04 Step:1095} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:05 Step:1113} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:05 Step:1113} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:05 Step:1134} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:05 Step:1134} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:05 Step:1152} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:06 Step:1167} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:06 Step:1167} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:06 Step:1182} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:06 Step:1195} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:06 Step:1195} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:07 Step:1210} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:07 Step:1222} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:07 Step:1234} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:07 Step:1234} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:07 Step:1244} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:53:07 Step:1244} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:08 Step:1254} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:53:08 Step:1265} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:08 Step:1278} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:08 Step:1278} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:08 Step:1295} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:09 Step:1310} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:09 Step:1323} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:09 Step:1338} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:09 Step:1352} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:10 Step:1367} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:10 Step:1382} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:10 Step:1382} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:10 Step:1396} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:11 Step:1409} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:11 Step:1423} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:11 Step:1437} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:11 Step:1451} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:12 Step:1451} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:12 Step:1465} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:12 Step:1479} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:12 Step:1493} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:13 Step:1511} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:13 Step:1511} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:13 Step:1512} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:13 Step:1533} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:13 Step:1533} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:14 Step:1553} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:14 Step:1553} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:14 Step:1573} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:14 Step:1573} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:14 Step:1593} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:14 Step:1593} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:15 Step:1610} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:15 Step:1610} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:15 Step:1626} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:15 Step:1635} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:53:15 Step:1635} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:15 Step:1649} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:15 Step:1649} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:16 Step:1663} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:16 Step:1663} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:16 Step:1684} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:17 Step:1703} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:17 Step:1703} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:17 Step:1725} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:17 Step:1725} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:17 Step:1746} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:17 Step:1746} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:17 Step:1747} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:18 Step:1769} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:18 Step:1769} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:18 Step:1788} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:19 Step:1803} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:19 Step:1803} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:19 Step:1823} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:19 Step:1823} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:19 Step:1838} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:19 Step:1838} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:20 Step:1850} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:20 Step:1850} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:20 Step:1862} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:20 Step:1862} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:20 Step:1875} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:20 Step:1890} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:20 Step:1890} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:21 Step:1904} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:21 Step:1904} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:21 Step:1923} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:21 Step:1939} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:21 Step:1939} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:22 Step:1955} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:22 Step:1955} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:22 Step:1968} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:22 Step:1979} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:22 Step:1993} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:23 Step:2009} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:23 Step:2023} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:23 Step:2023} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:23 Step:2043} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:23 Step:2043} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:24 Step:2064} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:24 Step:2064} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:24 Step:2075} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:24 Step:2075} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:24 Step:2085} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:53:24 Step:2085} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:24 Step:2095} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:53:25 Step:2107} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:25 Step:2107} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:25 Step:2115} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:53:25 Step:2115} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:25 Step:2126} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:53:25 Step:2136} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:53:25 Step:2136} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:26 Step:2156} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:26 Step:2156} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:26 Step:2178} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:26 Step:2178} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:27 Step:2203} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:53:27 Step:2224} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:27 Step:2224} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:27 Step:2241} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:28 Step:2255} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:28 Step:2266} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:28 Step:2275} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:53:28 Step:2275} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:28 Step:2286} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:28 Step:2286} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:29 Step:2299} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:29 Step:2312} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:29 Step:2312} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:29 Step:2327} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:29 Step:2327} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:29 Step:2343} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:30 Step:2356} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:30 Step:2356} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:30 Step:2371} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:53:30 Step:2384} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:30 Step:2394} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:53:30 Step:2394} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:31 Step:2412} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:31 Step:2432} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:31 Step:2432} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:32 Step:2450} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:32 Step:2450} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:32 Step:2469} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:32 Step:2482} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:32 Step:2482} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:32 Step:2494} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:33 Step:2494} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:33 Step:2506} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:33 Step:2522} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:33 Step:2522} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:33 Step:2534} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:53:33 Step:2534} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:34 Step:2546} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:53:34 Step:2561} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:53:34 Step:2561} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:34 Step:2581} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:35 Step:2597} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:35 Step:2597} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:35 Step:2621} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:53:35 Step:2621} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:36 Step:2653} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:53:36 Step:2653} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:36 Step:2679} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:53:36 Step:2679} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:37 Step:2706} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:53:37 Step:2732} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:53:38 Step:2764} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:53:38 Step:2792} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:53:39 Step:2792} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:39 Step:2821} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:53:39 Step:2821} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:40 Step:2847} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:53:40 Step:2865} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:40 Step:2865} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:40 Step:2878} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:53:40 Step:2878} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:41 Step:2894} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:41 Step:2894} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:41 Step:2917} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:41 Step:2917} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:41 Step:2941} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:53:41 Step:2941} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:42 Step:2961} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:42 Step:2961} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:42 Step:2962} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:42 Step:2983} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:43 Step:2999} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:43 Step:2999} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:43 Step:3021} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:43 Step:3021} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:43 Step:3041} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:44 Step:3041} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:44 Step:3064} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:53:44 Step:3064} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:44 Step:3065} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:44 Step:3087} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:45 Step:3103} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:45 Step:3103} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:45 Step:3119} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:45 Step:3140} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:46 Step:3140} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:46 Step:3168} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:53:46 Step:3168} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:47 Step:3205} Server_Comm.py: The agent lost 36 consecutive packets! Is syncmode disabled?
+{Tue 17:53:47 Step:3205} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:47 Step:3206} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:48 Step:3242} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:53:48 Step:3242} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:48 Step:3282} Server_Comm.py: The agent lost 39 consecutive packets! Is syncmode disabled?
+{Tue 17:53:49 Step:3315} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:53:49 Step:3315} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:50 Step:3340} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:53:50 Step:3363} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:53:50 Step:3363} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:50 Step:3385} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:50 Step:3385} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:51 Step:3405} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:51 Step:3405} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:51 Step:3423} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:52 Step:3440} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:52 Step:3459} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:52 Step:3459} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:52 Step:3478} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:52 Step:3478} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:53 Step:3497} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:53:53 Step:3513} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:53 Step:3529} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:53 Step:3529} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:54 Step:3545} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:54 Step:3545} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:54 Step:3572} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:53:55 Step:3597} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:53:55 Step:3597} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:55 Step:3619} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:55 Step:3619} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:56 Step:3647} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:53:56 Step:3668} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:53:57 Step:3688} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:53:57 Step:3688} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:57 Step:3718} Server_Comm.py: The agent lost 29 consecutive packets! Is syncmode disabled?
+{Tue 17:53:57 Step:3718} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:58 Step:3747} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:53:58 Step:3747} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:58 Step:3769} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:53:58 Step:3769} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:59 Step:3787} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:53:59 Step:3787} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:53:59 Step:3803} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:53:59 Step:3803} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:53:59 Step:3823} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:53:59 Step:3823} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:00 Step:3844} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:00 Step:3844} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:00 Step:3861} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:00 Step:3874} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:01 Step:3886} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:54:01 Step:3900} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:54:01 Step:3912} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:54:01 Step:3922} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:54:01 Step:3922} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:02 Step:3939} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:02 Step:3959} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:02 Step:3959} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:02 Step:3981} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:54:02 Step:3981} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:03 Step:4001} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:03 Step:4001} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:03 Step:4021} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:04 Step:4036} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:54:04 Step:4048} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:54:04 Step:4048} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:04 Step:4061} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:04 Step:4061} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:04 Step:4078} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:04 Step:4078} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:05 Step:4094} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:54:05 Step:4106} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:54:05 Step:4106} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:05 Step:4124} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:54:05 Step:4124} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:06 Step:4139} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:54:06 Step:4153} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:54:06 Step:4166} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:07 Step:4189} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:07 Step:4189} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:07 Step:4213} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:54:07 Step:4213} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:08 Step:4239} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:54:08 Step:4239} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:08 Step:4279} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:54:08 Step:4279} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:09 Step:4313} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:54:09 Step:4313} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:10 Step:4348} Server_Comm.py: The agent lost 34 consecutive packets! Is syncmode disabled?
+{Tue 17:54:10 Step:4348} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:10 Step:4381} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:54:11 Step:4404} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:11 Step:4423} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:12 Step:4438} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:54:12 Step:4449} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:54:12 Step:4459} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:54:12 Step:4459} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:12 Step:4468} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:54:12 Step:4468} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:13 Step:4482} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:13 Step:4495} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:13 Step:4495} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:13 Step:4512} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:13 Step:4512} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:14 Step:4541} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:54:14 Step:4541} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:14 Step:4573} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:54:15 Step:4595} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:54:15 Step:4595} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:15 Step:4619} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:15 Step:4619} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:16 Step:4639} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:16 Step:4639} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:16 Step:4660} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:16 Step:4675} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:54:16 Step:4675} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:17 Step:4690} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:54:17 Step:4690} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:17 Step:4704} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:54:17 Step:4704} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:17 Step:4717} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:17 Step:4717} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:17 Step:4726} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:54:17 Step:4726} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:18 Step:4736} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:54:18 Step:4736} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:18 Step:4746} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:54:18 Step:4746} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:18 Step:4754} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:54:18 Step:4754} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:18 Step:4763} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:54:18 Step:4763} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:18 Step:4765} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 17:54:18 Step:4765} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:18 Step:4776} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:54:19 Step:4787} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:54:19 Step:4787} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:19 Step:4801} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:54:19 Step:4801} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:19 Step:4819} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:19 Step:4819} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:20 Step:4834} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:54:20 Step:4847} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:20 Step:4847} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:20 Step:4871} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:54:20 Step:4871} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:21 Step:4901} Server_Comm.py: The agent lost 29 consecutive packets! Is syncmode disabled?
+{Tue 17:54:21 Step:4901} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:22 Step:4942} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:54:22 Step:4942} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:22 Step:4976} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:54:23 Step:5007} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:54:23 Step:5007} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:24 Step:5043} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:54:24 Step:5076} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:54:25 Step:5105} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:54:26 Step:5140} Server_Comm.py: The agent lost 34 consecutive packets! Is syncmode disabled?
+{Tue 17:54:26 Step:5169} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:54:27 Step:5189} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:27 Step:5189} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:27 Step:5217} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:54:27 Step:5217} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:28 Step:5243} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:54:28 Step:5264} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:54:29 Step:5284} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:29 Step:5284} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:29 Step:5305} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:54:29 Step:5305} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:29 Step:5325} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:30 Step:5342} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:30 Step:5342} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:30 Step:5368} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:54:30 Step:5368} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:31 Step:5386} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:54:31 Step:5386} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:31 Step:5387} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:31 Step:5410} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:32 Step:5437} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:54:32 Step:5460} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:32 Step:5460} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:33 Step:5482} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:54:33 Step:5502} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:33 Step:5521} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:34 Step:5541} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:34 Step:5556} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:54:34 Step:5556} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:34 Step:5569} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:35 Step:5581} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:54:35 Step:5581} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:35 Step:5597} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:54:35 Step:5615} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:54:35 Step:5615} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:36 Step:5633} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:54:36 Step:5652} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:36 Step:5671} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:36 Step:5671} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:37 Step:5692} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:37 Step:5712} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:38 Step:5735} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:38 Step:5735} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:38 Step:5761} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:54:38 Step:5761} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:39 Step:5784} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:39 Step:5807} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:39 Step:5807} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:40 Step:5832} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:54:40 Step:5852} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:54:40 Step:5852} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:41 Step:5891} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:54:41 Step:5891} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:42 Step:5930} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:54:42 Step:5930} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:42 Step:5968} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:54:43 Step:6000} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:54:44 Step:6028} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:54:44 Step:6028} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:44 Step:6064} Server_Comm.py: The agent lost 34 consecutive packets! Is syncmode disabled?
+{Tue 17:54:44 Step:6064} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:45 Step:6101} Server_Comm.py: The agent lost 36 consecutive packets! Is syncmode disabled?
+{Tue 17:54:46 Step:6132} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:54:46 Step:6168} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:54:46 Step:6168} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:47 Step:6206} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:54:48 Step:6240} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:54:49 Step:6271} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:54:49 Step:6271} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:49 Step:6306} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:54:49 Step:6306} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:50 Step:6344} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:54:50 Step:6344} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:51 Step:6381} Server_Comm.py: The agent lost 36 consecutive packets! Is syncmode disabled?
+{Tue 17:54:51 Step:6381} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:51 Step:6382} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:51 Step:6415} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:54:51 Step:6415} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:51 Step:6418} Server_Comm.py: The agent lost 2 consecutive packets! Is syncmode disabled?
+{Tue 17:54:52 Step:6458} Server_Comm.py: The agent lost 39 consecutive packets! Is syncmode disabled?
+{Tue 17:54:52 Step:6458} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:53 Step:6507} Server_Comm.py: The agent lost 48 consecutive packets! Is syncmode disabled?
+{Tue 17:54:53 Step:6507} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:54 Step:6554} Server_Comm.py: The agent lost 45 consecutive packets! Is syncmode disabled?
+{Tue 17:54:54 Step:6554} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:55 Step:6594} Server_Comm.py: The agent lost 39 consecutive packets! Is syncmode disabled?
+{Tue 17:54:56 Step:6620} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:54:56 Step:6638} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:54:56 Step:6654} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:54:56 Step:6654} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:57 Step:6677} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:54:57 Step:6677} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:54:57 Step:6696} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:57 Step:6696} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:57 Step:6714} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:54:58 Step:6730} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:54:58 Step:6743} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:58 Step:6754} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:54:58 Step:6764} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:54:59 Step:6777} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:54:59 Step:6777} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:54:59 Step:6796} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:54:59 Step:6815} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:54:59 Step:6815} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:00 Step:6840} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:00 Step:6857} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:01 Step:6875} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:55:01 Step:6875} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:01 Step:6886} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:01 Step:6886} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:01 Step:6900} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:01 Step:6910} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:01 Step:6910} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:02 Step:6918} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:02 Step:6926} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:55:02 Step:6926} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:02 Step:6936} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:02 Step:6936} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:02 Step:6946} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:02 Step:6958} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:02 Step:6958} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:03 Step:6974} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:03 Step:6974} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:03 Step:6991} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:03 Step:6991} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:03 Step:7009} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:55:03 Step:7009} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:04 Step:7025} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:04 Step:7025} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:04 Step:7045} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:55:04 Step:7045} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:05 Step:7065} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:55:05 Step:7065} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:05 Step:7090} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:05 Step:7090} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:06 Step:7119} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:55:06 Step:7119} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:06 Step:7159} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:55:06 Step:7159} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:06 Step:7160} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:07 Step:7201} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:55:07 Step:7201} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:08 Step:7237} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:55:08 Step:7237} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:09 Step:7276} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:55:09 Step:7276} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:10 Step:7315} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:55:10 Step:7315} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:10 Step:7353} Server_Comm.py: The agent lost 36 consecutive packets! Is syncmode disabled?
+{Tue 17:55:10 Step:7353} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:11 Step:7390} Server_Comm.py: The agent lost 36 consecutive packets! Is syncmode disabled?
+{Tue 17:55:12 Step:7417} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:55:12 Step:7417} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:12 Step:7443} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:55:12 Step:7443} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:13 Step:7467} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:13 Step:7467} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:13 Step:7491} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:13 Step:7491} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:13 Step:7510} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:55:14 Step:7510} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:14 Step:7541} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:55:14 Step:7541} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:15 Step:7571} Server_Comm.py: The agent lost 29 consecutive packets! Is syncmode disabled?
+{Tue 17:55:15 Step:7571} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:16 Step:7612} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:55:16 Step:7643} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:55:17 Step:7665} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:55:17 Step:7687} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:55:17 Step:7709} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:55:17 Step:7709} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:18 Step:7733} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:18 Step:7733} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:18 Step:7754} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:55:19 Step:7770} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:19 Step:7770} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:19 Step:7786} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:19 Step:7797} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:19 Step:7797} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:19 Step:7809} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:20 Step:7818} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:20 Step:7818} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:20 Step:7833} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:20 Step:7833} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:20 Step:7851} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:20 Step:7851} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:21 Step:7867} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:21 Step:7867} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:21 Step:7884} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:21 Step:7884} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:21 Step:7903} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:55:21 Step:7903} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:22 Step:7918} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:22 Step:7918} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:22 Step:7930} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:22 Step:7930} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:22 Step:7945} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:22 Step:7945} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:22 Step:7958} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:23 Step:7958} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:23 Step:7973} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:23 Step:7989} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:23 Step:7989} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:24 Step:8024} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:55:25 Step:8058} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:55:25 Step:8084} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:55:25 Step:8084} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:26 Step:8109} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:55:26 Step:8133} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:26 Step:8133} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:27 Step:8160} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:55:27 Step:8160} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:27 Step:8185} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:55:27 Step:8185} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:27 Step:8198} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:27 Step:8198} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:28 Step:8210} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:28 Step:8210} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:28 Step:8227} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:28 Step:8227} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:28 Step:8240} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:55:28 Step:8240} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:28 Step:8241} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:28 Step:8252} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:29 Step:8269} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:29 Step:8269} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:29 Step:8287} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:55:29 Step:8287} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:29 Step:8303} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:30 Step:8319} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:30 Step:8319} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:30 Step:8334} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:30 Step:8343} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:30 Step:8343} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:31 Step:8359} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:31 Step:8359} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:31 Step:8360} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:31 Step:8381} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:55:31 Step:8381} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:31 Step:8396} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:32 Step:8407} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:32 Step:8419} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:32 Step:8419} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:32 Step:8433} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:32 Step:8433} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:32 Step:8447} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:55:32 Step:8447} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:33 Step:8465} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:55:33 Step:8465} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:33 Step:8486} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:55:33 Step:8486} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:34 Step:8506} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:55:34 Step:8522} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:34 Step:8522} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:34 Step:8523} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:34 Step:8544} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:55:35 Step:8563} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:55:35 Step:8563} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:35 Step:8581} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:35 Step:8581} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:35 Step:8598} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:36 Step:8625} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:55:36 Step:8625} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:36 Step:8649} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:37 Step:8673} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:37 Step:8673} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:37 Step:8691} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:37 Step:8691} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:38 Step:8707} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:38 Step:8707} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:38 Step:8719} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:38 Step:8719} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:38 Step:8735} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:38 Step:8735} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:38 Step:8748} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:55:38 Step:8748} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:39 Step:8758} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:39 Step:8758} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:39 Step:8769} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:39 Step:8769} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:39 Step:8785} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:39 Step:8785} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:39 Step:8801} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:39 Step:8801} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:40 Step:8827} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:55:40 Step:8827} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:41 Step:8862} Server_Comm.py: The agent lost 34 consecutive packets! Is syncmode disabled?
+{Tue 17:55:41 Step:8862} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:41 Step:8898} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:55:42 Step:8920} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:55:42 Step:8920} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:42 Step:8935} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:42 Step:8935} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:42 Step:8949} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:55:42 Step:8949} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:43 Step:8958} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:43 Step:8966} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:55:43 Step:8966} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:43 Step:8972} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:55:43 Step:8979} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:43 Step:8986} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:43 Step:8986} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:43 Step:8994} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:55:43 Step:8994} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:44 Step:9001} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:44 Step:9013} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:44 Step:9013} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:44 Step:9024} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:44 Step:9034} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:44 Step:9045} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:44 Step:9045} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:45 Step:9065} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:55:45 Step:9065} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:45 Step:9087} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:55:45 Step:9087} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:46 Step:9115} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:55:46 Step:9137} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:55:46 Step:9137} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:47 Step:9161} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:55:47 Step:9177} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:47 Step:9188} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:47 Step:9188} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:47 Step:9197} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:47 Step:9197} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:48 Step:9206} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:48 Step:9213} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:48 Step:9220} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:48 Step:9220} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:48 Step:9233} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:55:48 Step:9233} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:49 Step:9254} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:55:49 Step:9269} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:49 Step:9269} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:49 Step:9282} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:55:49 Step:9282} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:49 Step:9283} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:49 Step:9292} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:50 Step:9302} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:50 Step:9319} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:50 Step:9336} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:55:50 Step:9336} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:51 Step:9352} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:51 Step:9352} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:51 Step:9368} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:51 Step:9368} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:51 Step:9382} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:55:51 Step:9382} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:51 Step:9392} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:52 Step:9402} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:52 Step:9402} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:52 Step:9415} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:55:52 Step:9415} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:52 Step:9425} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:52 Step:9434} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:52 Step:9444} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:53 Step:9454} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:53 Step:9454} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:53 Step:9461} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:55:53 Step:9461} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:53 Step:9470} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:55:53 Step:9470} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:53 Step:9480} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:53 Step:9480} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:53 Step:9489} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:55:53 Step:9489} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:54 Step:9504} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:55:54 Step:9504} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:54 Step:9515} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:55:54 Step:9525} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:55:54 Step:9525} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:54 Step:9541} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:55:54 Step:9541} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:55 Step:9559} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:55:55 Step:9581} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:55:56 Step:9607} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:55:56 Step:9607} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:56 Step:9635} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:55:56 Step:9635} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:57 Step:9669} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:55:57 Step:9669} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:57 Step:9670} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:58 Step:9702} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:55:58 Step:9702} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:58 Step:9737} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:55:58 Step:9737} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:55:58 Step:9738} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:55:59 Step:9776} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:56:00 Step:9815} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:56:00 Step:9837} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:56:00 Step:9837} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:01 Step:9859} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:01 Step:9859} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:01 Step:9879} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:01 Step:9879} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:02 Step:9899} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:56:02 Step:9914} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:56:02 Step:9914} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:02 Step:9926} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:56:02 Step:9940} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:03 Step:9951} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:03 Step:9951} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:03 Step:9969} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:03 Step:9982} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:03 Step:9992} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:04 Step:10003} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:04 Step:10003} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:04 Step:10017} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:04 Step:10017} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:04 Step:10031} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:04 Step:10031} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:04 Step:10042} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:05 Step:10050} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:56:05 Step:10050} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:05 Step:10060} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:56:05 Step:10070} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:05 Step:10070} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:05 Step:10083} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:05 Step:10083} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:06 Step:10096} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:06 Step:10096} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:06 Step:10110} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:06 Step:10110} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:06 Step:10124} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:06 Step:10124} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:06 Step:10141} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:56:07 Step:10157} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:56:07 Step:10157} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:07 Step:10184} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:56:07 Step:10184} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:08 Step:10208} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:56:08 Step:10227} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:56:08 Step:10227} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:09 Step:10245} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:09 Step:10245} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:09 Step:10266} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:09 Step:10287} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:10 Step:10304} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:10 Step:10304} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:10 Step:10316} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:56:10 Step:10316} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:10 Step:10327} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:10 Step:10327} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:10 Step:10337} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:10 Step:10337} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:11 Step:10348} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:11 Step:10348} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:11 Step:10361} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:11 Step:10361} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:11 Step:10362} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:11 Step:10381} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:56:11 Step:10381} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:12 Step:10397} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:56:12 Step:10410} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:12 Step:10410} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:12 Step:10423} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:56:12 Step:10423} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:12 Step:10439} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:56:12 Step:10439} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:13 Step:10456} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:13 Step:10456} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:13 Step:10476} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:13 Step:10476} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:14 Step:10502} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:56:14 Step:10522} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:15 Step:10545} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:15 Step:10545} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:15 Step:10546} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:15 Step:10570} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:56:15 Step:10570} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:16 Step:10592} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:56:16 Step:10613} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:16 Step:10613} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:16 Step:10616} Server_Comm.py: The agent lost 2 consecutive packets! Is syncmode disabled?
+{Tue 17:56:16 Step:10616} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:17 Step:10643} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:56:17 Step:10664} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:17 Step:10681} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:17 Step:10681} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:18 Step:10699} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:18 Step:10715} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:56:18 Step:10715} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:19 Step:10738} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:19 Step:10738} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:19 Step:10739} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:19 Step:10760} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:19 Step:10760} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:19 Step:10779} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:56:20 Step:10793} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:20 Step:10793} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:20 Step:10814} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:20 Step:10837} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:20 Step:10837} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:21 Step:10871} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:56:21 Step:10871} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:22 Step:10907} Server_Comm.py: The agent lost 34 consecutive packets! Is syncmode disabled?
+{Tue 17:56:22 Step:10907} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:22 Step:10908} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:23 Step:10960} Server_Comm.py: The agent lost 51 consecutive packets! Is syncmode disabled?
+{Tue 17:56:23 Step:10960} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:24 Step:11004} Server_Comm.py: The agent lost 43 consecutive packets! Is syncmode disabled?
+{Tue 17:56:24 Step:11004} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:25 Step:11049} Server_Comm.py: The agent lost 44 consecutive packets! Is syncmode disabled?
+{Tue 17:56:25 Step:11049} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:26 Step:11092} Server_Comm.py: The agent lost 42 consecutive packets! Is syncmode disabled?
+{Tue 17:56:26 Step:11092} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:26 Step:11128} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:56:26 Step:11128} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:27 Step:11157} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:56:27 Step:11157} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:27 Step:11183} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:56:27 Step:11183} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:28 Step:11207} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:28 Step:11207} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:28 Step:11232} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:56:29 Step:11255} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:29 Step:11255} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:29 Step:11279} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:29 Step:11279} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:30 Step:11299} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:30 Step:11299} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:30 Step:11314} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:56:30 Step:11328} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:31 Step:11338} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:31 Step:11338} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:31 Step:11349} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:31 Step:11349} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:31 Step:11360} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:31 Step:11374} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:31 Step:11374} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:32 Step:11389} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:56:32 Step:11410} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:32 Step:11432} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:56:33 Step:11454} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:56:33 Step:11454} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:33 Step:11483} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:56:34 Step:11483} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:34 Step:11522} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:56:35 Step:11555} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:56:35 Step:11555} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:36 Step:11596} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:56:36 Step:11627} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:56:36 Step:11627} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:36 Step:11628} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:37 Step:11659} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:56:37 Step:11659} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:38 Step:11687} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:56:38 Step:11687} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:38 Step:11713} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:56:38 Step:11713} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:39 Step:11737} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:56:39 Step:11737} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:39 Step:11738} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:39 Step:11772} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:56:40 Step:11813} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:56:40 Step:11813} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:41 Step:11843} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:56:41 Step:11872} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:56:41 Step:11872} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:42 Step:11898} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:56:42 Step:11898} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:42 Step:11917} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:56:42 Step:11917} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:43 Step:11938} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:43 Step:11954} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:56:43 Step:11964} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:43 Step:11964} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:43 Step:11974} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:44 Step:11981} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:56:44 Step:11981} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:44 Step:11992} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:44 Step:12005} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:44 Step:12005} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:44 Step:12026} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:45 Step:12047} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:45 Step:12047} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:45 Step:12049} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 17:56:45 Step:12049} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:45 Step:12050} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:46 Step:12084} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:56:46 Step:12084} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:46 Step:12116} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:56:46 Step:12116} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:47 Step:12158} Server_Comm.py: The agent lost 41 consecutive packets! Is syncmode disabled?
+{Tue 17:56:47 Step:12158} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:48 Step:12189} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:56:48 Step:12210} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:56:49 Step:12230} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:49 Step:12230} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:49 Step:12254} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:56:49 Step:12254} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:49 Step:12270} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:56:49 Step:12270} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:50 Step:12284} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:50 Step:12284} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:50 Step:12301} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:56:50 Step:12301} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:50 Step:12315} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:50 Step:12324} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:56:50 Step:12324} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:51 Step:12332} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:56:51 Step:12340} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:56:51 Step:12340} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:51 Step:12349} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:56:51 Step:12349} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:51 Step:12360} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:52 Step:12379} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:56:52 Step:12379} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:52 Step:12418} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:56:53 Step:12447} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:56:53 Step:12447} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:53 Step:12471} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:56:54 Step:12488} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:54 Step:12501} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:54 Step:12501} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:54 Step:12512} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:54 Step:12512} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:54 Step:12524} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:56:54 Step:12524} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:55 Step:12538} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:56:55 Step:12538} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:55 Step:12553} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:56:55 Step:12553} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:55 Step:12564} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:55 Step:12564} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:55 Step:12572} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:56:56 Step:12582} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:56 Step:12582} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:56 Step:12592} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:56 Step:12592} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:56 Step:12605} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:56:56 Step:12605} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:56 Step:12618} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:56 Step:12618} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:57 Step:12635} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:56:57 Step:12655} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:57 Step:12655} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:57 Step:12674} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:56:57 Step:12674} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:58 Step:12687} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:56:58 Step:12698} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:58 Step:12698} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:58 Step:12708} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:56:58 Step:12708} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:58 Step:12717} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:56:58 Step:12717} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:59 Step:12728} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:56:59 Step:12728} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:56:59 Step:12748} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:56:59 Step:12748} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:59 Step:12749} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:56:59 Step:12750} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:00 Step:12779} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:57:00 Step:12779} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:00 Step:12803} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:57:00 Step:12803} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:00 Step:12821} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:00 Step:12821} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:01 Step:12836} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:01 Step:12836} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:01 Step:12847} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:01 Step:12847} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:01 Step:12856} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:01 Step:12856} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:01 Step:12864} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:01 Step:12864} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:02 Step:12874} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:02 Step:12874} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:02 Step:12885} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:02 Step:12885} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:02 Step:12897} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:02 Step:12897} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:02 Step:12906} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:02 Step:12906} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:02 Step:12916} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:03 Step:12927} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:03 Step:12927} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:03 Step:12938} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:03 Step:12950} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:03 Step:12963} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:03 Step:12963} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:04 Step:12978} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:04 Step:12989} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:04 Step:13001} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:04 Step:13001} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:04 Step:13018} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:05 Step:13032} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:05 Step:13032} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:05 Step:13054} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:57:05 Step:13054} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:05 Step:13067} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:05 Step:13067} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:06 Step:13079} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:06 Step:13088} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:06 Step:13088} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:06 Step:13098} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:06 Step:13106} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:06 Step:13106} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:06 Step:13116} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:06 Step:13116} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:07 Step:13125} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:07 Step:13125} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:07 Step:13137} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:07 Step:13146} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:07 Step:13154} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:07 Step:13154} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:07 Step:13166} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:08 Step:13179} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:08 Step:13192} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:08 Step:13206} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:08 Step:13206} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:09 Step:13223} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:09 Step:13223} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:09 Step:13241} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:09 Step:13256} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:09 Step:13256} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:10 Step:13272} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:10 Step:13272} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:10 Step:13286} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:10 Step:13298} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:10 Step:13298} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:10 Step:13312} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:10 Step:13312} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:11 Step:13322} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:11 Step:13333} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:11 Step:13349} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:11 Step:13370} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:57:12 Step:13370} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:12 Step:13389} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:57:12 Step:13389} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:12 Step:13404} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:12 Step:13416} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:12 Step:13416} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:12 Step:13417} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:13 Step:13426} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:13 Step:13426} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:13 Step:13428} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 17:57:13 Step:13441} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:13 Step:13457} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:14 Step:13475} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:14 Step:13475} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:14 Step:13501} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:57:14 Step:13501} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:14 Step:13502} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:15 Step:13526} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:57:15 Step:13543} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:15 Step:13543} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:15 Step:13555} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:15 Step:13555} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:15 Step:13562} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:57:15 Step:13562} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:15 Step:13564} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 17:57:16 Step:13572} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:16 Step:13572} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:16 Step:13573} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:16 Step:13583} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:16 Step:13583} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:16 Step:13596} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:16 Step:13596} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:16 Step:13607} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:16 Step:13615} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:16 Step:13615} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:17 Step:13623} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:57:17 Step:13623} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:17 Step:13633} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:17 Step:13633} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:17 Step:13648} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:17 Step:13648} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:17 Step:13662} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:17 Step:13662} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:18 Step:13679} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:18 Step:13692} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:18 Step:13706} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:18 Step:13706} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:18 Step:13707} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:19 Step:13727} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:57:19 Step:13727} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:19 Step:13743} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:19 Step:13743} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:19 Step:13754} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:19 Step:13754} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:19 Step:13762} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:20 Step:13769} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:57:20 Step:13776} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:57:20 Step:13789} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:20 Step:13805} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:20 Step:13805} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:21 Step:13821} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:21 Step:13842} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:57:21 Step:13842} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:21 Step:13843} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:21 Step:13844} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:22 Step:13878} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:57:22 Step:13878} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:23 Step:13918} Server_Comm.py: The agent lost 39 consecutive packets! Is syncmode disabled?
+{Tue 17:57:23 Step:13943} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:57:23 Step:13943} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:23 Step:13961} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:23 Step:13961} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:24 Step:13978} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:24 Step:13978} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:24 Step:13995} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:24 Step:14012} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:24 Step:14012} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:25 Step:14029} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:25 Step:14044} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:25 Step:14056} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:25 Step:14065} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:26 Step:14065} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:26 Step:14080} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:26 Step:14080} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:26 Step:14095} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:26 Step:14106} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:27 Step:14125} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:57:27 Step:14141} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:27 Step:14141} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:27 Step:14154} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:27 Step:14154} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:27 Step:14164} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:27 Step:14164} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:28 Step:14174} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:28 Step:14174} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:28 Step:14187} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:28 Step:14203} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:29 Step:14221} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:29 Step:14221} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:29 Step:14235} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:29 Step:14235} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:29 Step:14248} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:29 Step:14248} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:29 Step:14260} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:30 Step:14272} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:30 Step:14284} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:30 Step:14296} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:30 Step:14313} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:30 Step:14313} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:31 Step:14331} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:31 Step:14344} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:31 Step:14344} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:31 Step:14357} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:31 Step:14357} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:31 Step:14358} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:32 Step:14372} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:32 Step:14383} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:32 Step:14383} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:32 Step:14402} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:32 Step:14402} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:33 Step:14421} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:57:33 Step:14421} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:33 Step:14442} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:57:33 Step:14459} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:33 Step:14459} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:34 Step:14472} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:34 Step:14483} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:34 Step:14483} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:34 Step:14507} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:57:34 Step:14507} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:35 Step:14536} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:57:35 Step:14536} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:35 Step:14557} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:57:36 Step:14575} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:36 Step:14587} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:36 Step:14595} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:36 Step:14595} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:36 Step:14605} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:57:36 Step:14605} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:37 Step:14625} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:57:37 Step:14656} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:57:37 Step:14656} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:38 Step:14678} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:57:38 Step:14678} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:38 Step:14694} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:38 Step:14702} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:57:38 Step:14702} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:38 Step:14709} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:57:38 Step:14709} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:39 Step:14720} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:39 Step:14720} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:39 Step:14732} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:57:39 Step:14750} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:57:39 Step:14750} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:39 Step:14751} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:40 Step:14778} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:57:40 Step:14778} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:40 Step:14807} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:57:41 Step:14840} Server_Comm.py: The agent lost 32 consecutive packets! Is syncmode disabled?
+{Tue 17:57:41 Step:14840} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:42 Step:14872} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:57:43 Step:14918} Server_Comm.py: The agent lost 45 consecutive packets! Is syncmode disabled?
+{Tue 17:57:43 Step:14918} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:44 Step:14967} Server_Comm.py: The agent lost 48 consecutive packets! Is syncmode disabled?
+{Tue 17:57:44 Step:14967} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:44 Step:14968} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:45 Step:15014} Server_Comm.py: The agent lost 45 consecutive packets! Is syncmode disabled?
+{Tue 17:57:45 Step:15014} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:45 Step:15015} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:45 Step:15049} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:57:45 Step:15049} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:46 Step:15077} Server_Comm.py: The agent lost 26 consecutive packets! Is syncmode disabled?
+{Tue 17:57:46 Step:15077} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:46 Step:15078} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:46 Step:15104} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:57:46 Step:15104} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:47 Step:15126} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:57:47 Step:15139} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:47 Step:15139} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:47 Step:15156} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:47 Step:15156} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:48 Step:15172} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:48 Step:15189} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:57:48 Step:15189} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:49 Step:15209} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:57:49 Step:15209} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:49 Step:15234} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:57:49 Step:15234} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:49 Step:15235} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:50 Step:15276} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:57:50 Step:15276} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:51 Step:15332} Server_Comm.py: The agent lost 55 consecutive packets! Is syncmode disabled?
+{Tue 17:57:51 Step:15332} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:52 Step:15376} Server_Comm.py: The agent lost 42 consecutive packets! Is syncmode disabled?
+{Tue 17:57:52 Step:15376} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:53 Step:15412} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:57:53 Step:15438} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:57:54 Step:15461} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:57:54 Step:15461} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:54 Step:15478} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:54 Step:15488} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:54 Step:15494} Server_Comm.py: The agent lost 5 consecutive packets! Is syncmode disabled?
+{Tue 17:57:54 Step:15494} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:54 Step:15502} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:57:54 Step:15502} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:55 Step:15512} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:57:55 Step:15528} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:57:55 Step:15528} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:55 Step:15554} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:57:56 Step:15595} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:57:56 Step:15595} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:57 Step:15629} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:57:57 Step:15629} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:57 Step:15653} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:57:57 Step:15653} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:57 Step:15654} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:58 Step:15678} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:57:58 Step:15678} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:58 Step:15692} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:57:58 Step:15692} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:57:58 Step:15704} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:57:59 Step:15718} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:57:59 Step:15718} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:59 Step:15734} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:59 Step:15734} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:57:59 Step:15750} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:57:59 Step:15750} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:00 Step:15762} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:58:00 Step:15762} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:00 Step:15778} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:58:00 Step:15778} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:00 Step:15794} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:58:00 Step:15794} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:01 Step:15813} Server_Comm.py: The agent lost 18 consecutive packets! Is syncmode disabled?
+{Tue 17:58:01 Step:15813} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:01 Step:15843} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:58:01 Step:15843} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:02 Step:15880} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:58:02 Step:15880} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:03 Step:15911} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:58:03 Step:15911} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:03 Step:15939} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:58:03 Step:15939} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:04 Step:15982} Server_Comm.py: The agent lost 41 consecutive packets! Is syncmode disabled?
+{Tue 17:58:05 Step:16023} Server_Comm.py: The agent lost 40 consecutive packets! Is syncmode disabled?
+{Tue 17:58:05 Step:16023} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:05 Step:16049} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:58:06 Step:16073} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:58:06 Step:16094} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:58:06 Step:16094} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:07 Step:16110} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:58:07 Step:16110} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:07 Step:16124} Server_Comm.py: The agent lost 13 consecutive packets! Is syncmode disabled?
+{Tue 17:58:07 Step:16139} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:58:07 Step:16139} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:07 Step:16141} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 17:58:07 Step:16141} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:08 Step:16159} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:58:08 Step:16159} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:08 Step:16173} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:58:08 Step:16183} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:58:08 Step:16183} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:08 Step:16193} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:58:09 Step:16201} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:58:09 Step:16201} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:09 Step:16208} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:58:09 Step:16208} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:09 Step:16216} Server_Comm.py: The agent lost 7 consecutive packets! Is syncmode disabled?
+{Tue 17:58:09 Step:16226} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:58:09 Step:16226} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:09 Step:16236} Server_Comm.py: The agent lost 9 consecutive packets! Is syncmode disabled?
+{Tue 17:58:09 Step:16245} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:58:10 Step:16252} Server_Comm.py: The agent lost 6 consecutive packets! Is syncmode disabled?
+{Tue 17:58:10 Step:16252} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:10 Step:16253} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:10 Step:16270} Server_Comm.py: The agent lost 16 consecutive packets! Is syncmode disabled?
+{Tue 17:58:10 Step:16270} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:11 Step:16314} Server_Comm.py: The agent lost 43 consecutive packets! Is syncmode disabled?
+{Tue 17:58:11 Step:16314} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:12 Step:16353} Server_Comm.py: The agent lost 38 consecutive packets! Is syncmode disabled?
+{Tue 17:58:12 Step:16353} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:12 Step:16354} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:12 Step:16388} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:58:13 Step:16422} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:58:14 Step:16453} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:58:14 Step:16453} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:14 Step:16494} Server_Comm.py: The agent lost 39 consecutive packets! Is syncmode disabled?
+{Tue 17:58:14 Step:16494} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:15 Step:16528} Server_Comm.py: The agent lost 33 consecutive packets! Is syncmode disabled?
+{Tue 17:58:15 Step:16528} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:16 Step:16572} Server_Comm.py: The agent lost 43 consecutive packets! Is syncmode disabled?
+{Tue 17:58:16 Step:16572} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:17 Step:16610} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:58:17 Step:16638} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:58:18 Step:16664} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:58:18 Step:16664} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:18 Step:16695} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:58:18 Step:16695} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:19 Step:16719} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:58:19 Step:16719} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:19 Step:16741} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:58:20 Step:16762} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:58:20 Step:16762} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:20 Step:16783} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:58:20 Step:16783} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:21 Step:16808} Server_Comm.py: The agent lost 23 consecutive packets! Is syncmode disabled?
+{Tue 17:58:21 Step:16808} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:21 Step:16831} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:58:21 Step:16831} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:22 Step:16859} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:58:22 Step:16859} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:22 Step:16891} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:58:22 Step:16891} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:23 Step:16923} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:58:23 Step:16923} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:24 Step:16961} Server_Comm.py: The agent lost 36 consecutive packets! Is syncmode disabled?
+{Tue 17:58:24 Step:16961} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:24 Step:16990} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:58:25 Step:17011} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:58:25 Step:17011} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:25 Step:17036} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:58:26 Step:17056} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:58:26 Step:17074} Server_Comm.py: The agent lost 17 consecutive packets! Is syncmode disabled?
+{Tue 17:58:26 Step:17074} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:26 Step:17086} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:58:27 Step:17099} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:58:27 Step:17124} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:58:27 Step:17124} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:27 Step:17125} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:28 Step:17154} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:58:28 Step:17154} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:28 Step:17155} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:28 Step:17193} Server_Comm.py: The agent lost 37 consecutive packets! Is syncmode disabled?
+{Tue 17:58:28 Step:17193} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:28 Step:17194} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:29 Step:17195} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:29 Step:17236} Server_Comm.py: The agent lost 39 consecutive packets! Is syncmode disabled?
+{Tue 17:58:29 Step:17236} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:30 Step:17283} Server_Comm.py: The agent lost 46 consecutive packets! Is syncmode disabled?
+{Tue 17:58:31 Step:17336} Server_Comm.py: The agent lost 52 consecutive packets! Is syncmode disabled?
+{Tue 17:58:31 Step:17336} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:32 Step:17373} Server_Comm.py: The agent lost 35 consecutive packets! Is syncmode disabled?
+{Tue 17:58:32 Step:17373} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:33 Step:17408} Server_Comm.py: The agent lost 34 consecutive packets! Is syncmode disabled?
+{Tue 17:58:33 Step:17431} Server_Comm.py: The agent lost 22 consecutive packets! Is syncmode disabled?
+{Tue 17:58:34 Step:17444} Server_Comm.py: The agent lost 12 consecutive packets! Is syncmode disabled?
+{Tue 17:58:34 Step:17444} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:34 Step:17455} Server_Comm.py: The agent lost 10 consecutive packets! Is syncmode disabled?
+{Tue 17:58:34 Step:17455} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:34 Step:17464} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:58:34 Step:17473} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:58:34 Step:17473} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:34 Step:17482} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:58:34 Step:17491} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:58:35 Step:17500} Server_Comm.py: The agent lost 8 consecutive packets! Is syncmode disabled?
+{Tue 17:58:35 Step:17500} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:35 Step:17512} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:58:35 Step:17512} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:35 Step:17524} Server_Comm.py: The agent lost 11 consecutive packets! Is syncmode disabled?
+{Tue 17:58:35 Step:17524} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:35 Step:17540} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:58:36 Step:17560} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:58:36 Step:17580} Server_Comm.py: The agent lost 19 consecutive packets! Is syncmode disabled?
+{Tue 17:58:37 Step:17602} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:58:37 Step:17602} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:38 Step:17647} Server_Comm.py: The agent lost 44 consecutive packets! Is syncmode disabled?
+{Tue 17:58:38 Step:17647} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:38 Step:17648} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:39 Step:17705} Server_Comm.py: The agent lost 56 consecutive packets! Is syncmode disabled?
+{Tue 17:58:39 Step:17705} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:40 Step:17759} Server_Comm.py: The agent lost 52 consecutive packets! Is syncmode disabled?
+{Tue 17:58:40 Step:17759} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:41 Step:17791} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:58:41 Step:17791} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:41 Step:17817} Server_Comm.py: The agent lost 25 consecutive packets! Is syncmode disabled?
+{Tue 17:58:41 Step:17817} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:42 Step:17845} Server_Comm.py: The agent lost 27 consecutive packets! Is syncmode disabled?
+{Tue 17:58:42 Step:17845} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:42 Step:17846} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:42 Step:17875} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:58:42 Step:17875} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:43 Step:17897} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:58:43 Step:17897} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:43 Step:17922} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:58:44 Step:17944} Server_Comm.py: The agent lost 21 consecutive packets! Is syncmode disabled?
+{Tue 17:58:44 Step:17944} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:44 Step:17975} Server_Comm.py: The agent lost 30 consecutive packets! Is syncmode disabled?
+{Tue 17:58:45 Step:18007} Server_Comm.py: The agent lost 31 consecutive packets! Is syncmode disabled?
+{Tue 17:58:45 Step:18007} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:45 Step:18037} Server_Comm.py: The agent lost 28 consecutive packets! Is syncmode disabled?
+{Tue 17:58:45 Step:18037} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:46 Step:18063} Server_Comm.py: The agent lost 24 consecutive packets! Is syncmode disabled?
+{Tue 17:58:46 Step:18063} Server_Comm.py: Received a new packet while thinking!
+{Tue 17:58:46 Step:18084} Server_Comm.py: The agent lost 20 consecutive packets! Is syncmode disabled?
+{Tue 17:58:47 Step:18100} Server_Comm.py: The agent lost 15 consecutive packets! Is syncmode disabled?
+{Tue 17:58:47 Step:18100} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 17:58:47 Step:18116} Server_Comm.py: The agent lost 14 consecutive packets! Is syncmode disabled?
+{Tue 17:58:47 Step:18116} Server_Comm.py: Received a new packet while on world.update()!
