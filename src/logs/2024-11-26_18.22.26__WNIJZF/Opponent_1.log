@@ -1,0 +1,24 @@
+{Tue 18:22:26 Step:75} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:26 Step:77} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:26 Step:95} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:163} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:163} Server_Comm.py: Received a new packet while thinking!
+{Tue 18:22:28 Step:166} Server_Comm.py: The agent lost 2 consecutive packets! Is syncmode disabled?
+{Tue 18:22:28 Step:166} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 18:22:28 Step:167} Server_Comm.py: Received a new packet while thinking!
+{Tue 18:22:28 Step:168} Server_Comm.py: Received a new packet while thinking!
+{Tue 18:22:28 Step:170} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:175} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:183} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:197} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:199} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:29 Step:201} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:29 Step:203} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:32 Step:377} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:32 Step:379} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:399} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:407} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:411} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:425} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:34 Step:455} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:34 Step:461} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?

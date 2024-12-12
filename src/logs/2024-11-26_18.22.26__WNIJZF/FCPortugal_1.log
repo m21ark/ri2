@@ -1,0 +1,24 @@
+{Tue 18:22:26 Step:83} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:26 Step:85} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:26 Step:103} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:171} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:171} Server_Comm.py: Received a new packet while thinking!
+{Tue 18:22:28 Step:173} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:173} Server_Comm.py: Received a new packet while on world.update()!
+{Tue 18:22:28 Step:174} Server_Comm.py: Received a new packet while thinking!
+{Tue 18:22:28 Step:176} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:181} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:184} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:191} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:205} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:28 Step:207} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:29 Step:209} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:29 Step:211} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:32 Step:385} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:32 Step:387} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:32 Step:407} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:415} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:420} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:33 Step:444} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:34 Step:463} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
+{Tue 18:22:34 Step:469} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
