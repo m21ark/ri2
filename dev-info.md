@@ -30,10 +30,11 @@
 Total: 21
 
 # Output
+- Choose action - 3
 - Custom actions:
     - Basic Kick - direction (2)
     - Get_Up
     - Walk - target_2d (2), orientation (2), distance (float [0, 0.5])
-- Choose action - 3
+
 
 Total: 10

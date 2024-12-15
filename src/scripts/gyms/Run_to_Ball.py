@@ -121,41 +121,30 @@ class Basic_Run(gym.Env):
         
         r = self.player.world.robot
 
-        # exponential moving average
-        self.act = 0.4 * self.act + 0.6 * action
+        # index of the highest value in the action array
+        custom_behavior = np.argmax(action[:3])
 
-        # execute Step behavior to extract the target positions of each leg (we will override these targets)
-        if self.step_counter == 0:
-            '''
-            The first time step will change the parameters of the next footstep
-            It uses default parameters so that the agent can anticipate the next generated pose
-            Reason: the agent decides the parameters during the previous footstep
-            '''
-            self.player.behavior.execute("Step", self.step_default_dur, self.step_default_z_span, self.step_default_z_max)
-        else:
-            
-            step_zsp =     np.clip(self.step_default_z_span + self.act[20]/300,   0,     0.07)
-            step_zmx =     np.clip(self.step_default_z_max  + self.act[21]/30,    0.6,   0.9)
+        if custom_behavior == 0:
+            self.player.behavior.execute("Basic_Kick", action[3:5])
+            self.getting_up = False
+            self.lastAction = np.zeros(3,np.float32)
+            self.lastAction[0] = 1
 
-            self.player.behavior.execute("Step", self.step_default_dur, step_zsp, step_zmx)
+        elif custom_behavior == 1:
+            self.player.behavior.execute("Get_Up")
+            self.getting_up = True
+            self.lastAction = np.zeros(3,np.float32)
+            self.lastAction[1] = 1
 
-        
-        # add action as residuals to Step behavior (the index of these actions is not the typical index because both head joints are excluded)
-        new_action = self.act[:20] * 2 # scale up actions to motivate exploration
-        new_action[[0,2,4,6,8,10]] += self.step_obj.values_l
-        new_action[[1,3,5,7,9,11]] += self.step_obj.values_r
-        new_action[12] -= 90 # arms down
-        new_action[13] -= 90 # arms down
-        new_action[16] += 90 # untwist arms
-        new_action[17] += 90 # untwist arms
-        new_action[18] += 90 # elbows at 90 deg
-        new_action[19] += 90 # elbows at 90 deg
+        elif custom_behavior == 2:
+            # clip the dir to []
+            # dir = 
+            self.player.behavior.execute("Walk", action[5:7], True, action[7], True, action[8])
+            self.getting_up = False
+            self.lastAction = np.zeros(3,np.float32)
+            self.lastAction[2] = 1
 
-        r.set_joints_target_position_direct( # commit actions:
-            slice(2,22),        # act on all joints except head & toes (for robot type 4)
-            new_action,         # target joint positions 
-            harmonize=False     # there is no point in harmonizing actions if the targets change at every step  
-        )
+
 
         self.sync() # run simulation step
         self.step_counter += 1
