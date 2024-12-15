@@ -5,9 +5,9 @@ from MyAgentDefender import MyAgentDefender
 import threading
 
 def attacker_loop():
-  while True:
-    attacker.think_and_send()
-    attacker.scom.receive()
+    while True:
+        attacker.think_and_send()
+        attacker.scom.receive()
     
 def defender_loop():
     while True:
