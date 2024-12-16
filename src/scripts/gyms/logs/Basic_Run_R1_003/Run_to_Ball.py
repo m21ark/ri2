@@ -39,12 +39,11 @@ class Basic_Run(gym.Env):
         self.action_space = gym.spaces.Box(low=np.full(act_size,-MAX,np.float32), high=np.full(act_size,MAX,np.float32), dtype=np.float32)
 
         # # memory variables
-        # self.initialBallPos =  np.array((0,0,0))
+        # self.initialBallPos = (0,0,0)
         # self.lastBallPos = self.initialBallPos
-        # self.lastPlayerPos =  np.array((0,0, self.player.world.robot.beam_height))
-        self.lastAction = np.zeros(3,np.float32) # last action (for observation)
-        self.ballHasMoved = False
-        self.getting_up = False
+        # self.lastPlayerPos = (0,0, self.player.world.robot.beam_height)
+        # self.lastAction = np.zeros(3,np.float32) # last action (for observation)
+        # self.ballHasMoved = False
 
 
     def observe(self, init=False):
@@ -94,9 +93,9 @@ class Basic_Run(gym.Env):
         offset = np.random.uniform(-1, 1)
 
         # memory variables
-        self.initialBallPos = np.array((-8 + offset/2,offset,0))
+        self.initialBallPos = (-8 + offset/2,offset,0)
         self.lastBallPos = self.initialBallPos
-        self.lastPlayerPos =  np.array((6 + offset, offset, r.beam_height))
+        self.lastPlayerPos = (6 + offset, offset, r.beam_height)
         self.lastAction = np.zeros(3,np.float32)
         self.ballHasMoved = False
 
@@ -176,7 +175,7 @@ class Basic_Run(gym.Env):
             self.ballHasMoved = True
             # Ball has moved towards the goal
             prev_dist = np.linalg.norm(self.lastBallPos[:2] - (15,0))
-            current_dist = np.linalg.norm(self.player.world.ball_abs_pos[:2] - (15,0))
+            current_dist = np.linalg.norm(self.player.world.ball_abs_pos - (15,0))
             points = prev_dist - current_dist
             
         else: # Ball has not moved

@@ -20,7 +20,7 @@ while True:
     player_2d = w.robot.loc_head_position[:2]
     ball_2d = w.ball_abs_pos[:2]
     goal_dir = M.vector_angle((15,0)-player_2d) # Calculates the angle of the vector from the robot's head position to the center of the opponent's goal
-
+    print("Goal direction:", goal_dir)
     if player.behavior.is_ready("Get_Up") or getting_up:
         getting_up = not player.behavior.execute("Get_Up") # True on completion
     else:

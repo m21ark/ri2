@@ -176,7 +176,7 @@ class Basic_Run(gym.Env):
             self.ballHasMoved = True
             # Ball has moved towards the goal
             prev_dist = np.linalg.norm(self.lastBallPos[:2] - (15,0))
-            current_dist = np.linalg.norm(self.player.world.ball_abs_pos[:2] - (15,0))
+            current_dist = np.linalg.norm(self.player.world.ball_abs_pos - (15,0))
             points = prev_dist - current_dist
             
         else: # Ball has not moved
