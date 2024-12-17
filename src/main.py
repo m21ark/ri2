@@ -28,13 +28,15 @@ def main():
     # Setup start scene
     
     # random ofset between -1 and 1
-    offset = random.uniform(-1, 1)
+    offset = random.uniform(-2, 2)
+    
+    kick_pos = (-10 + offset/2, offset,0)
     
     attacker.scom.unofficial_set_play_mode("PlayOn")
     defender.scom.unofficial_set_game_time(0)
-    defender.scom.unofficial_move_ball((-8 + offset/2,offset,0), (0,0,0))
+    defender.scom.unofficial_move_ball(kick_pos, (0,0,0))
     defender.scom.unofficial_beam((-14,0,defender.world.robot.beam_height), 0)
-    attacker.scom.unofficial_beam((6 + offset, offset,attacker.world.robot.beam_height), 0)
+    attacker.scom.unofficial_beam((-kick_pos[0] - 0.5, -kick_pos[1], attacker.world.robot.beam_height), 0)
     
     # start the threads
     attacker_thread.start()
