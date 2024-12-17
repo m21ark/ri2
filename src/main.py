@@ -1,6 +1,6 @@
 from math_ops.Math_Ops import Math_Ops as M
 import random
-from agent.Agent import Agent as Agent_Attacker
+from MyAgentAttacker import MyAgentAttacker
 from MyAgentDefender import MyAgentDefender
 import threading
 
@@ -14,24 +14,23 @@ def defender_loop():
         defender.think_and_send()
         defender.scom.receive()
         
-        
 def main():
     global attacker, defender
-    # Args: Server IP, Agent Port, Monitor Port, Uniform No., Team name, Enable Log, Enable Draw, Wait for Server, is magmaFatProxy
+
+    # create the agents
     defender = MyAgentDefender("localhost", 3100, 3200)
-    attacker = Agent_Attacker("localhost", 3100, 3200, 2, "Attacker", False, False)
+    attacker = MyAgentAttacker("localhost", 3100, 3200)
 
     # create a thread for each agent
     attacker_thread = threading.Thread(target=attacker_loop)
     defender_thread = threading.Thread(target=defender_loop)
     
-    # Setup start scene
+    # Randomize the start pos
+    offsetDepth = random.uniform(-1.5, 0)
+    ofssetWidth = random.uniform(-3, 3)
+    kick_pos = (-10 + offsetDepth, ofssetWidth, 0)
     
-    # random ofset between -1 and 1
-    offset = random.uniform(-2, 2)
-    
-    kick_pos = (-10 + offset/2, offset,0)
-    
+    # set the initial conditions
     attacker.scom.unofficial_set_play_mode("PlayOn")
     defender.scom.unofficial_set_game_time(0)
     defender.scom.unofficial_move_ball(kick_pos, (0,0,0))
