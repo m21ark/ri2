@@ -202,7 +202,7 @@ class Train(Train_Base):
         n_envs = min(16, os.cpu_count())
         n_steps_per_env = 1024  # RolloutBuffer is of size (n_steps_per_env * n_envs)
         minibatch_size = 64    # should be a factor of (n_steps_per_env * n_envs)
-        total_steps = 30000000
+        total_steps = 300000#00
         learning_rate = 3e-4
         folder_name = f'Basic_Run_R{self.robot_type}'
         model_path = f'./scripts/gyms/logs/{folder_name}/'
@@ -273,3 +273,7 @@ Reward:
 - Displacement in the x-axis (it can be negative)
 - Note that cheat and visual data is only updated every 3 steps
 '''
+
+# Train start:    16/12/2024 17:30:50
+# Train end:      16/12/2024 18:07:53
+# Train duration: 0:37:02
