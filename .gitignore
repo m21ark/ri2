@@ -28,3 +28,4 @@ profile
 /bundle/*
 !/bundle/bundle.sh
 src/logs/*
+src/scripts/gyms/logs/*

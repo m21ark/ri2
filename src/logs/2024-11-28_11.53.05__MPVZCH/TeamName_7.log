@@ -1,3 +1,0 @@
-{Thu 11:53:05 Step:1} Server_Comm.py: Received a new packet while on world.update()!
-{Thu 11:53:05 Step:3} Server_Comm.py: The agent lost 1 packet! Is syncmode enabled?
-{Thu 11:53:05 Step:3} Server_Comm.py: Received a new packet while on world.update()!
