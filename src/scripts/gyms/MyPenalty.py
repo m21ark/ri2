@@ -19,7 +19,7 @@ class MyPenalty(gym.Env):
     def __init__(self, ip, server_p, monitor_p, r_type, enable_draw) -> None:
         # Initialize the agent
         self.robot_type = r_type
-        self.player = Agent(ip, server_p, monitor_p, 1, self.robot_type, "Gym", True, enable_draw)
+        self.player = Agent(ip, server_p, monitor_p, 2, self.robot_type, "Gym", True, enable_draw)
         self.step_counter = 0 # to limit episode size
 
         # ================ State Space ================ #
@@ -55,7 +55,6 @@ class MyPenalty(gym.Env):
         self.obs[6:9] = r.gyro                 /100  # gyroscope
         self.obs[9:12] = r.acc                 /10   # accelerometer
 
-        
         self.obs[12] =  float(not self.player.behavior.is_ready("Get_Up")) # has fallen
         self.obs[13] =  self.getting_up # is getting up (don't forget to reset when taking action)
         self.obs[14:16] = r.loc_head_position[:2] # Position of the player
@@ -70,36 +69,39 @@ class MyPenalty(gym.Env):
 
         return self.obs
 
-    # Resets the environment to a stable initial state
+    # Resets the environment to for a new episode
     def reset(self):
 
         self.step_counter = 0
         r = self.player.world.robot
-        offset = np.random.uniform(-1, 1)
-
-        # memory variables
-        self.initialBallPos = np.array((-8 + offset/2,offset,0))
-        self.lastBallPos = self.initialBallPos
-        self.lastPlayerPos =  np.array((6 + offset, offset, r.beam_height))
+        
+        # Randomize the start pos
+        offsetDepth = np.random.uniform(-1.5, -0.5)
+        ofssetWidth = np.random.uniform(-1.5, 1.5)
+        kick_pos = np.array((-10 + offsetDepth, ofssetWidth, 0))
+        
+        # set player position
+        self.lastPlayerPos =  np.array((-kick_pos[0] - 0.5, -kick_pos[1], r.beam_height))
+        
+        for _ in range(26): 
+            self.player.scom.unofficial_beam(self.lastPlayerPos,0) 
+            self.player.behavior.execute("Zero_Bent_Knees")
+            self.sync()
+            
+        r.joints_target_speed[0] = 0.01 # move head to trigger physics update
+            
+        # wipe action memory
         self.lastAction = np.zeros(3,np.float32)
         self.ballHasMoved = False
 
-        for _ in range(25): 
-            self.player.scom.unofficial_beam((self.lastPlayerPos[0],self.lastPlayerPos[1],0.50),0) # beam player continuously (floating above ground)
-            self.player.behavior.execute("Zero_Bent_Knees")
-            self.sync()
-
-        # beam player to ground
-        self.player.scom.unofficial_beam(self.lastPlayerPos,0) 
-        r.joints_target_speed[0] = 0.01 # move head to trigger physics update (rcssserver3d bug when no joint is moving)
-        self.sync()
-
-        # stabilize on ground
+        # set ball position
+        self.initialBallPos = kick_pos
+        self.lastBallPos = kick_pos
+        
         for _ in range(7):
             self.player.behavior.execute("Zero_Bent_Knees")
-            self.player.scom.unofficial_move_ball(self.lastBallPos, (0,0,0))
+            self.player.scom.unofficial_move_ball(kick_pos, (0,0,0))
             self.sync()
-
 
         return self.observe(True)
 
@@ -113,7 +115,7 @@ class MyPenalty(gym.Env):
         custom_behavior = np.argmax(action[:3])
 
         if custom_behavior == 0:
-            self.player.behavior.execute("Basic_Kick", action[3])
+            self.player.behavior.execute("Basic_Kick", action[3]) # action[3] is the kick direction
             self.getting_up = False
             self.lastAction = np.zeros(3,np.float32)
             self.lastAction[0] = 1
@@ -125,15 +127,12 @@ class MyPenalty(gym.Env):
             self.lastAction[1] = 1
 
         elif custom_behavior == 2:
-            # orientation needs to be between 0 and 2*pi
             orientation = action[6] % (2*np.pi)
-            # clip the distance to [0, 0.5]
             distance = np.clip(action[7], 0, 0.5)
             self.player.behavior.execute("Walk", action[4:6], True, orientation, True, distance)
             self.getting_up = False
             self.lastAction = np.zeros(3,np.float32)
             self.lastAction[2] = 1
-
 
         # Run simulation step and get reward
         self.sync()
@@ -141,9 +140,18 @@ class MyPenalty(gym.Env):
         reward = self.reward()
 
         # Check if the episode is over
-        # terminal = r.cheat_abs_pos[2] < 0.3 or self.step_counter > 300
-        terminal =  self.step_counter > 300
-        return self.observe(), reward, terminal, {}
+        
+        # terminate episode if the robot has fallen 
+        terminate = self.player.behavior.is_ready("Get_Up")
+        
+        # or the ball has reached the goal
+        # terminate = terminate or (self.player.world.ball_abs_pos[0] < -15 and abs(self.player.world.ball_abs_pos[1]) < 2)
+    
+        # terminate if 5 seconds have passed
+        terminate = self.step_counter > 500
+
+        return self.observe(), reward, terminate, {}
+
 
     # Calculates the reward based on the robot's behavior
     def reward(self):
@@ -151,17 +159,31 @@ class MyPenalty(gym.Env):
         
         points = 0
         distanceMovedBall = np.linalg.norm(self.lastBallPos[:2] - self.initialBallPos[:2])
+
         if (self.ballHasMoved or distanceMovedBall > 0.05): # Ball has moved
             self.ballHasMoved = True
             # Ball has moved towards the goal
-            prev_dist = np.linalg.norm(self.lastBallPos[:2] - (15,0))
-            current_dist = np.linalg.norm(self.player.world.ball_abs_pos[:2] - (15,0))
-            points = prev_dist - current_dist
+            prev_dist = np.linalg.norm(self.lastBallPos[:2] - (-15,0))
+            current_dist = np.linalg.norm(self.player.world.ball_abs_pos[:2] - (-15,0))
+            points = prev_dist - current_dist * 10 # 10 points per meter
             
-        else: # Ball has not moved
+        else: # Ball has not moved. Player should move towards the ball
             prev_dist = np.linalg.norm(self.lastPlayerPos[:2] - self.player.world.ball_abs_pos[:2])
             current_dist = np.linalg.norm(r.loc_head_position[:2] - self.player.world.ball_abs_pos[:2])
             points = prev_dist - current_dist
+            
+        # if the ball reaches the goal
+        if self.player.world.ball_abs_pos[0] < -15 and abs(self.player.world.ball_abs_pos[1]) < 2:
+            points = 1000
+            print("Goal!")
+            
+        if self.player.behavior.is_ready("Get_Up"):
+            points -= 1000
+            # print("Fell!")
+            
+        if self.player.behavior.is_ready("Basic_Kick"):
+            points += 50
+            # print("Kicked!")
 
         # Dont forget to update the positions
         self.lastBallPos = self.player.world.ball_abs_pos
@@ -191,7 +213,7 @@ class Train(Train_Base):
         n_envs = min(16, os.cpu_count())
         n_steps_per_env = 1024  # RolloutBuffer is of size (n_steps_per_env * n_envs)
         minibatch_size = 64    # should be a factor of (n_steps_per_env * n_envs)
-        total_steps = 30000000
+        total_steps = 300000 # 00
         learning_rate = 3e-3
         folder_name = f'Penalty_Kick{self.robot_type}'
         model_path = f'./scripts/gyms/logs/{folder_name}/'

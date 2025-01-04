@@ -14,6 +14,22 @@ def defender_loop():
         defender.think_and_send()
         defender.scom.receive()
         
+        # if defender.world.M_THEIR_GOAL:
+            # reset()
+            
+def reset():
+    # Randomize the start pos
+    offsetDepth = random.uniform(-1.5, -0.5)
+    ofssetWidth = random.uniform(-1.5, 1.5)
+    kick_pos = (-10 + offsetDepth, ofssetWidth, 0)
+    
+    # set the initial conditions
+    attacker.scom.unofficial_set_play_mode("PlayOn")
+    defender.scom.unofficial_set_game_time(0)
+    defender.scom.unofficial_move_ball(kick_pos, (0,0,0))
+    defender.scom.unofficial_beam((-14,0,defender.world.robot.beam_height), 0)
+    attacker.scom.unofficial_beam((-kick_pos[0] - 0.5, -kick_pos[1], attacker.world.robot.beam_height), 0)
+    
 def main():
     global attacker, defender
 
@@ -25,17 +41,7 @@ def main():
     attacker_thread = threading.Thread(target=attacker_loop)
     defender_thread = threading.Thread(target=defender_loop)
     
-    # Randomize the start pos
-    offsetDepth = random.uniform(-1.5, 0)
-    ofssetWidth = random.uniform(-3, 3)
-    kick_pos = (-10 + offsetDepth, ofssetWidth, 0)
-    
-    # set the initial conditions
-    attacker.scom.unofficial_set_play_mode("PlayOn")
-    defender.scom.unofficial_set_game_time(0)
-    defender.scom.unofficial_move_ball(kick_pos, (0,0,0))
-    defender.scom.unofficial_beam((-14,0,defender.world.robot.beam_height), 0)
-    attacker.scom.unofficial_beam((-kick_pos[0] - 0.5, -kick_pos[1], attacker.world.robot.beam_height), 0)
+    reset()
     
     # start the threads
     attacker_thread.start()
