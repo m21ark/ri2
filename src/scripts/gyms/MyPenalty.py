@@ -9,44 +9,38 @@ from time import sleep
 import os, gym
 import numpy as np
 
-'''
-Objective:
-Learn how to run forward using step primitive
-----------
-- class Basic_Run: implements an OpenAI custom gym
-- class Train:  implements algorithms to train a new model or test an existing model
-'''
-
-class Basic_Run(gym.Env):
+# This class implements an OpenAI custom gym. The main methods are:
+# - __init__: Initializes the environment
+# - observe: Gathers the current state of the agent and environment to form the observation vector
+# - reset: Resets the environment to a stable initial state
+# - step: Defines how the environment evolves with each agent action
+# - reward: Calculates the reward based on the agents's behavior
+class MyPenalty(gym.Env):
     def __init__(self, ip, server_p, monitor_p, r_type, enable_draw) -> None:
-
+        # Initialize the agent
         self.robot_type = r_type
-
-        # Args: Server IP, Agent Port, Monitor Port, Uniform No., Robot Type, Team Name, Enable Log, Enable Draw
         self.player = Agent(ip, server_p, monitor_p, 1, self.robot_type, "Gym", True, enable_draw)
         self.step_counter = 0 # to limit episode size
 
-        # self.step_obj : Step = self.player.behavior.get_custom_behavior_object("Step") # Step behavior object
-
-        # State space
-        obs_size = 21
+        # ================ State Space ================ #
+        obs_size = 21 # 21-dimensional continuous space
         self.obs = np.zeros(obs_size, np.float32)
         self.observation_space = gym.spaces.Box(low=np.full(obs_size,-np.inf,np.float32), high=np.full(obs_size,np.inf,np.float32), dtype=np.float32)
 
-        # Action space
+        # ================ Action Space ================ #
         MAX = np.finfo(np.float32).max
-        self.no_of_actions = act_size = 8
+        self.no_of_actions = act_size = 8 # 8-dimensional continuous space
         self.action_space = gym.spaces.Box(low=np.full(act_size,-MAX,np.float32), high=np.full(act_size,MAX,np.float32), dtype=np.float32)
 
-        # # memory variables
-        # self.initialBallPos =  np.array((0,0,0))
-        # self.lastBallPos = self.initialBallPos
-        # self.lastPlayerPos =  np.array((0,0, self.player.world.robot.beam_height))
+        # ================ Agent Memory ================ #
+        self.initialBallPos =  np.array((0,0,0))
+        self.lastBallPos = self.initialBallPos
+        self.lastPlayerPos =  np.array((0,0, self.player.world.robot.beam_height))
         self.lastAction = np.zeros(3,np.float32) # last action (for observation)
         self.ballHasMoved = False
         self.getting_up = False
 
-
+    # Gathers the current state of the agent and environment to form the observation vector
     def observe(self, init=False):
 
         r = self.player.world.robot
@@ -76,18 +70,8 @@ class Basic_Run(gym.Env):
 
         return self.obs
 
-    def sync(self):
-        ''' Run a single simulation step '''
-        r = self.player.world.robot
-        self.player.scom.commit_and_send( r.get_command() )
-        self.player.scom.receive()
-
-
+    # Resets the environment to a stable initial state
     def reset(self):
-        '''
-        Reset and stabilize the robot
-        Note: for some behaviors it would be better to reduce stabilization or add noise
-        '''
 
         self.step_counter = 0
         r = self.player.world.robot
@@ -119,17 +103,12 @@ class Basic_Run(gym.Env):
 
         return self.observe(True)
 
-    def render(self, mode='human', close=False):
-        return
-
-    def close(self):
-        Draw.clear_all()
-        self.player.terminate()
-
+    # Defines how the environment evolves with each action
     def step(self, action):
         
         r = self.player.world.robot
 
+        # Determines the robot's behavior based on the highest value in the action array
         # index of the highest value in the action array
         custom_behavior = np.argmax(action[:3])
 
@@ -156,17 +135,17 @@ class Basic_Run(gym.Env):
             self.lastAction[2] = 1
 
 
-        self.sync() # run simulation step
+        # Run simulation step and get reward
+        self.sync()
         self.step_counter += 1
-         
         reward = self.reward()
 
-        # terminal state: the robot is falling or timeout
+        # Check if the episode is over
         # terminal = r.cheat_abs_pos[2] < 0.3 or self.step_counter > 300
         terminal =  self.step_counter > 300
         return self.observe(), reward, terminal, {}
 
-
+    # Calculates the reward based on the robot's behavior
     def reward(self):
         r = self.player.world.robot
         
@@ -188,13 +167,23 @@ class Basic_Run(gym.Env):
         self.lastBallPos = self.player.world.ball_abs_pos
         self.lastPlayerPos = r.loc_head_position
         return points
+    
+    # ================== Helper Functions ================== #
+    def sync(self):
+        r = self.player.world.robot
+        self.player.scom.commit_and_send( r.get_command() )
+        self.player.scom.receive()       
+    def render(self, mode='human', close=False):
+        return
+    def close(self):
+        Draw.clear_all()
+        self.player.terminate()
 
-
-
+# Don't change this class because it implements algorithms
+# to train a new model or test an existing model
 class Train(Train_Base):
     def __init__(self, script) -> None:
         super().__init__(script)
-
 
     def train(self, args):
 
@@ -203,8 +192,8 @@ class Train(Train_Base):
         n_steps_per_env = 1024  # RolloutBuffer is of size (n_steps_per_env * n_envs)
         minibatch_size = 64    # should be a factor of (n_steps_per_env * n_envs)
         total_steps = 30000000
-        learning_rate = 3e-4
-        folder_name = f'Basic_Run_R{self.robot_type}'
+        learning_rate = 3e-3
+        folder_name = f'Penalty_Kick{self.robot_type}'
         model_path = f'./scripts/gyms/logs/{folder_name}/'
 
         print("Model path:", model_path)
@@ -212,11 +201,10 @@ class Train(Train_Base):
         #--------------------------------------- Run algorithm
         def init_env(i_env):
             def thunk():
-                return Basic_Run( self.ip , self.server_p + i_env, self.monitor_p_1000 + i_env, self.robot_type, False )
+                return MyPenalty( self.ip , self.server_p + i_env, self.monitor_p_1000 + i_env, self.robot_type, False )
             return thunk
 
-        servers = Server( self.server_p, self.monitor_p_1000, n_envs+1 ) #include 1 extra server for testing
-
+        servers = Server( self.server_p, self.monitor_p_1000, n_envs+1 )
         env = SubprocVecEnv( [init_env(i) for i in range(n_envs)] )
         eval_env = SubprocVecEnv( [init_env(n_envs)] )
 
@@ -237,12 +225,11 @@ class Train(Train_Base):
         eval_env.close()
         servers.kill()
         
-
     def test(self, args):
 
         # Uses different server and monitor ports
         server = Server( self.server_p-1, self.monitor_p, 1 )
-        env = Basic_Run( self.ip, self.server_p-1, self.monitor_p, self.robot_type, True )
+        env = MyPenalty( self.ip, self.server_p-1, self.monitor_p, self.robot_type, True )
         model = PPO.load( args["model_file"], env=env )
 
         try:
@@ -253,23 +240,3 @@ class Train(Train_Base):
 
         env.close()
         server.kill()
-
-
-'''
-The learning process takes several hours.
-A video with the results can be seen at:
-https://imgur.com/a/dC2V6Et
-
-Stats:
-- Avg. reward:     7.7 
-- Avg. ep. length: 5.5s (episode is limited to 6s)
-- Max. reward:     9.3  (speed: 1.55m/s)    
-
-State space:
-- Composed of all joint positions + torso height
-- Stage of the underlying Step behavior
-
-Reward:
-- Displacement in the x-axis (it can be negative)
-- Note that cheat and visual data is only updated every 3 steps
-'''
