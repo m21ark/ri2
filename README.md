@@ -5,6 +5,7 @@
 Penalty Shooting Scenario using RL in RoboCup 3D Simulation.
 
 Tasks:
+
 - Train a player agent to do penalty kicks with RL
 - Develop a basic heuristic-based goalie to defend the kicks
 
@@ -16,8 +17,9 @@ Tasks:
 
 ![State Machine](https://github.com/user-attachments/assets/d9d9d3da-86dd-4cdf-99c9-43e223ee0405)
 
-**Ball Tracking (Default State):** Agent moves sideways to place itself between the ball and the goal 
-**Diving Defense:** Agent dives sideways to defend based on the ball’s speed and direction  
+**Ball Tracking (Default State):** Agent moves sideways to place itself between the ball and the goal
+
+**Diving Defense:** Agent dives sideways to defend based on the ball’s speed and direction
 
 ![Dive Defense](https://github.com/user-attachments/assets/4a723a23-84b4-44b1-b1ef-e7d1aa9807a6)
 
@@ -44,13 +46,20 @@ Run the command to startup all needed services and then close them with CTRL+C:
 > cd src/robotViz/bin && sh roboviz.sh
 ```
 
-
 - The last command is the script of what you want to run. A possibility is:
 
 ```
-> python3 src/Run_One_vs_One.py 
+> python3 src/Run_One_vs_One.py
 ```
 
+### Troubleshooting
+
+It seems that **rcssserver3d** sometimes gets bugged, and even if you try stop it, it will still be running, making it so the next time you run the UI, it will just display a black screen. To fix this, you need to kill the process that is still running in the background.
+
+```bash
+ps aux | grep rcssserver3d # or sudo netstat -plten
+kill -9 <pid>
+```
 
 ## Group
 
