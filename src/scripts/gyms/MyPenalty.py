@@ -23,29 +23,29 @@ class MyPenalty(gym.Env):
         self.step_counter = 0 # to limit episode size
 
         # ================ State Space ================ #
-        obs_size = 10 # 10-dimensional continuous space
+        obs_size = 8 # N-dimensional continuous space
         self.obs = np.zeros(obs_size, np.float32)
         self.observation_space = gym.spaces.Box(low=np.full(obs_size,-np.inf,np.float32), high=np.full(obs_size,np.inf,np.float32), dtype=np.float32)
 
         # ================ Action Space ================ #
         MAX = np.finfo(np.float32).max
-        self.num_actions = 6 # 6-dimensional continuous space  
+        self.num_actions = 6 # N-dimensional continuous space  
         self.action_space = gym.spaces.Box(
-            low=np.array([0, -70, 0, -np.pi, -3, -3], dtype=np.float32),
-            high=np.array([1,  70, 0.5,  np.pi,  3,  3], dtype=np.float32),
+            low=np.array([0, -30, 0, -np.pi, -3, -3], dtype=np.float32),
+            high=np.array([1,  30, 0.5,  np.pi,  3,  3], dtype=np.float32),
             dtype=np.float32
         )
 
         # ================ Agent Memory ================ #
         self.initialBallPos =  np.array((0,0,0))
         self.lastBallPos = self.initialBallPos
-        self.lastPlayerPos =  np.array((0,0, self.player.world.robot.beam_height))
+        self.currPos =  np.array((0,0, self.player.world.robot.beam_height))
         self.lastAction = 0
         self.ballHasMoved = False
         
         # ================ Start Position ================ #
         
-        self.kickPos = [10, 0] # X, Y
+        self.startKickPos = [10, 0] # X, Y
         self.goalPos = np.array((15,0)) # goal center position
         self.goalWidth = 1.5
         self.kickerBackOffset = 0.5
@@ -66,7 +66,6 @@ class MyPenalty(gym.Env):
             self.player.world.ball_abs_pos[:2],             # Position of the ball
             self.goal_player_vec                            # Vector player pos to goal
         ))
-        self.obs[8] = r.imu_torso_orientation / 180.0      # absolute orientation in degrees
     
         return self.obs
 
@@ -77,37 +76,37 @@ class MyPenalty(gym.Env):
         r = self.player.world.robot
         
         # Randomize the start pos: Negative gets away from the goal
-        offsetDepth = np.random.uniform(0, 1.5)
-        ofssetWidth = np.random.uniform(-1.25, 1.25)
+        offsetDepth = 0 # np.random.uniform(0, 1)
+        ofssetWidth = 0 # np.random.uniform(-1.25, 1.25)
         
-        kick_pos = np.array((self.kickPos[0] + offsetDepth, self.kickPos[1] + ofssetWidth, 0))
-        self.lastPlayerPos =  np.array((kick_pos[0] - self.kickerBackOffset, kick_pos[1], r.beam_height))
+        newStartPos = np.array((self.startKickPos[0] + offsetDepth, self.startKickPos[1] + ofssetWidth, 0))
+        self.currPos =  np.array((newStartPos[0] - self.kickerBackOffset, newStartPos[1], r.beam_height))
         
-        self.player.scom.unofficial_move_ball(kick_pos, (0,0,0))
+        self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
         self.sync()
         self.player.scom.unofficial_set_play_mode("PlayOn")
         self.player.scom.unofficial_set_game_time(0)
         
         for _ in range(7):
             self.player.behavior.execute("Zero_Bent_Knees")
-            self.player.scom.unofficial_move_ball(kick_pos, (0,0,0))
+            self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
             self.sync()
         
         # set player position
         for _ in range(25): 
-            self.player.scom.unofficial_beam([self.lastPlayerPos[0], self.lastPlayerPos[1], 0.5],0) 
+            self.player.scom.unofficial_beam([self.currPos[0], self.currPos[1], 0.5],0) 
             self.player.behavior.execute("Zero_Bent_Knees")
             self.sync()
             
-        self.player.scom.unofficial_beam(self.lastPlayerPos,0) 
+        self.player.scom.unofficial_beam(self.currPos,0) 
         r.joints_target_speed[0] = 0.01 # move head to trigger physics update
         self.sync()
             
         # wipe action memory
         self.lastAction = 0
         self.ballHasMoved = False
-        self.initialBallPos = kick_pos
-        self.lastBallPos = kick_pos
+        self.initialBallPos = newStartPos
+        self.lastBallPos = newStartPos
         
         # reset flags
         self.hasFallenLastIteration = False
@@ -120,9 +119,7 @@ class MyPenalty(gym.Env):
 
     # Defines how the environment evolves with each action
     def step(self, action):
-        
-        r = self.player.world.robot
-        
+            
         # Unpack the actions
         isKickOrwalk = action[0] > 0.5
         kick_direction = action[1]
@@ -131,9 +128,9 @@ class MyPenalty(gym.Env):
         walk_target_pos = [action[4], action[5]]
         
         # Execute the action step
-        if isKickOrwalk: # Kick 
+        if isKickOrwalk: 
             self.player.behavior.execute("Basic_Kick", kick_direction)
-        else: # Walk   
+        else:
             self.player.behavior.execute("Walk", walk_target_pos, True, walk_orientation, True, walk_distance)
         self.lastAction = isKickOrwalk
 
@@ -151,32 +148,32 @@ class MyPenalty(gym.Env):
     # Calculates the reward based on the robot's behavior
     def reward(self):
         r = self.player.world.robot
+        points = -1
         
-        points = -1 # default reward is negative because each step costs a little
-
-        # =============== Calculate Position Points ===============
-
-        distanceMovedBall = np.linalg.norm(self.lastBallPos[:2] - self.initialBallPos[:2])
-
-        if (self.ballHasMoved or distanceMovedBall > 0.05): # Ball has moved
-            self.ballHasMoved = True
-            # Ball has moved towards the goal
-            # prev_dist = abs(np.linalg.norm(self.lastBallPos[:2] - self.goalPos))
-            current_dist = abs(np.linalg.norm(self.player.world.ball_abs_pos[:2] - self.goalPos))
+        # =============== Calculate Intermidiate Points ===============
+        
+        ball = self.player.world.ball_abs_pos[:2]
+        player = r.cheat_abs_pos[:2]
+        player2ballDistance = abs(np.linalg.norm(ball - player))
+        ball2goalDistance = abs(np.linalg.norm(ball - self.goalPos))
+        self.ballHasMoved = np.linalg.norm(self.lastBallPos[:2] - self.initialBallPos[:2]) > 0.1
+        
+        # If the ball has moved towards the goal
+        if self.ballHasMoved and ball2goalDistance < 3 and abs(ball[1]) < self.goalWidth:
+            points += 30 * (5 - ball2goalDistance)
+        elif self.ballHasMoved and ball2goalDistance < 3:
+            points += 15 * ball2goalDistance 
+        elif self.ballHasMoved:
+            points -= 30 * ball2goalDistance # penalize for moving away from the goal
             
-            if current_dist < 3: # Ball is close to the goal
-                points += max(10, (3 - current_dist) * 5) 
+        if player2ballDistance > 1 and not self.ballHasMoved:
+            points -= abs(player2ballDistance) * 1000 # penalize for moving away from the ball without a kick happening
+        else:
+            points += -0.5 # reward for staying close to the ball
             
-        else: # Ball has not moved. Player should move towards the ball
-            current_dist = abs(np.linalg.norm(r.cheat_abs_pos[:2] - self.player.world.ball_abs_pos[:2]))
-            if current_dist > 1:
-                points -= abs(current_dist) * 10 # penalize for moving away from the ball
-            else:
-                points += 1 # reward for moving towards the ball
-                
-                if self.player.behavior.is_ready("Basic_Kick"):
-                    points += 3
-                    
+            if self.player.behavior.is_ready("Basic_Kick"):
+                points += 500 # reward for being choosing to kick
+            
         # =============== Check if the episode should be terminated =============== 
         
         # terminate episode if the player is in the wrong play mode
@@ -189,33 +186,33 @@ class MyPenalty(gym.Env):
         self.wasGoal = self.player.world.M_OUR_GOAL == self.player.world.play_mode
         if self.wasGoal:
             print("Goal!")
-            points += 2500
-            # the closer to the center of the goal, the more points
-            points += max(0, self.goalWidth + 5 - abs(self.player.world.ball_abs_pos[1])) * 250
+            points = 2500 + max(0, 5 - abs(ball[1])) * 250 # the closer to the center of the goal, the more points
             
         # check of ball was out of bounds
         self.isOutOfBounds = self.player.world.M_THEIR_GOAL_KICK == self.player.world.play_mode
         if self.isOutOfBounds:
-            print("Ended due to ball out of bounds")
-            points -= 1500
-        
-        # terminate episode if the episode has run for too long
-        self.isOvertime = self.step_counter >= 500
-        if self.isOvertime:
-            print(f"Ended due to time limit")
-            points -= 2000
+            print(f"Ended due to ball out of bounds")
+            points = -500 * abs(ball[1])
         
         # terminate episode if the player has fallen
         self.hasFallenLastIteration = (self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3) and not self.ballHasMoved
         if self.hasFallenLastIteration:
-            print(f"Ended due to fall at step {self.step_counter}")
-            points -= 2000
+            print(f"Ended due to fall")
+            points = -2000
+            
+        # terminate episode if the episode has run for too long
+        self.isOvertime = self.step_counter >= 500
+        if self.isOvertime:
+            print(f"Ended due to time limit: {round(ball2goalDistance,2)}")
+            if abs(ball[1]) < self.goalWidth and ball2goalDistance < 1.5:
+                points = 500 # reward for being close to the goal
+            else:
+                points = -1500 * ball2goalDistance
             
         # Dont forget to update the positions
-        self.lastBallPos = self.player.world.ball_abs_pos
-        self.lastPlayerPos = r.cheat_abs_pos
-        # print(f"Points: {points}")
-        return points
+        self.lastBallPos = ball
+        self.currPos = player
+        return points 
     
     # ================== Helper Functions ================== #
     def sync(self):
