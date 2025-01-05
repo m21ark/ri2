@@ -17,7 +17,6 @@ import numpy as np
 # - reward: Calculates the reward based on the agents's behavior
 class MyPenalty(gym.Env):
     def __init__(self, ip, server_p, monitor_p, r_type, enable_draw) -> None:
-        # Initialize the agent
         self.robot_type = r_type
         self.player = Agent(ip, server_p, monitor_p, 2, self.robot_type, "Gym", True, enable_draw)
         self.step_counter = 0 # to limit episode size
@@ -55,8 +54,7 @@ class MyPenalty(gym.Env):
 
         r = self.player.world.robot
         
-        # vector player to goal
-        self.goal_player_vec = self.goalPos - r.cheat_abs_pos[:2]
+        self.goal_player_vec = self.goalPos - r.cheat_abs_pos[:2]  # vector player to goal
         
         # ==================== Setting the observation space ==================== 
         self.obs[:8] = np.concatenate((
@@ -76,8 +74,8 @@ class MyPenalty(gym.Env):
         r = self.player.world.robot
         
         # Randomize the start pos: Negative gets away from the goal
-        offsetDepth = 0 # np.random.uniform(0, 1)
-        ofssetWidth = 0 # np.random.uniform(-1.25, 1.25)
+        offsetDepth = np.random.uniform(0, 1)
+        ofssetWidth = np.random.uniform(-1.25, 1.25)
         
         newStartPos = np.array((self.startKickPos[0] + offsetDepth, self.startKickPos[1] + ofssetWidth, 0))
         self.currPos =  np.array((newStartPos[0] - self.kickerBackOffset, newStartPos[1], r.beam_height))
@@ -157,30 +155,16 @@ class MyPenalty(gym.Env):
         player2ballDistance = abs(np.linalg.norm(ball - player))
         ball2goalDistance = abs(np.linalg.norm(ball - self.goalPos))
         self.ballHasMoved = np.linalg.norm(self.lastBallPos[:2] - self.initialBallPos[:2]) > 0.1
-        
-        # If the ball has moved towards the goal
-        if self.ballHasMoved and ball2goalDistance < 3 and abs(ball[1]) < self.goalWidth:
-            points += 30 * (5 - ball2goalDistance)
-        elif self.ballHasMoved and ball2goalDistance < 3:
-            points += 15 * ball2goalDistance 
-        elif self.ballHasMoved:
-            points -= 30 * ball2goalDistance # penalize for moving away from the goal
             
         if player2ballDistance > 1 and not self.ballHasMoved:
-            points -= abs(player2ballDistance) * 1000 # penalize for moving away from the ball without a kick happening
+            points -= abs(player2ballDistance) * 200 # penalize for moving away from the ball without a kick happening
         else:
-            points += -0.5 # reward for staying close to the ball
+            points += 0.5 # reward for staying close to the ball
             
-            if self.player.behavior.is_ready("Basic_Kick"):
-                points += 500 # reward for being choosing to kick
-            
+        if not self.ballHasMoved:
+            points -= 5 # penalize for not kicking the ball
+
         # =============== Check if the episode should be terminated =============== 
-        
-        # terminate episode if the player is in the wrong play mode
-        self.isWrongMode = self.player.world.play_mode not in [self.player.world.M_PLAY_ON, self.player.world.M_OUR_GOAL, self.player.world.M_THEIR_GOAL_KICK]
-        if (self.isWrongMode):
-            print(f"Ended due to bad play mode ({self.player.world.play_mode})")   
-            points = 0 
         
         # terminate episode if the player has scored a goal
         self.wasGoal = self.player.world.M_OUR_GOAL == self.player.world.play_mode
@@ -192,10 +176,10 @@ class MyPenalty(gym.Env):
         self.isOutOfBounds = self.player.world.M_THEIR_GOAL_KICK == self.player.world.play_mode
         if self.isOutOfBounds:
             print(f"Ended due to ball out of bounds")
-            points = -500 * abs(ball[1])
+            points = -150 * abs(ball[1])
         
         # terminate episode if the player has fallen
-        self.hasFallenLastIteration = (self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3) and not self.ballHasMoved
+        self.hasFallenLastIteration = r.loc_head_z < 0.3 and not self.ballHasMoved
         if self.hasFallenLastIteration:
             print(f"Ended due to fall")
             points = -2000
@@ -203,11 +187,12 @@ class MyPenalty(gym.Env):
         # terminate episode if the episode has run for too long
         self.isOvertime = self.step_counter >= 500
         if self.isOvertime:
-            print(f"Ended due to time limit: {round(ball2goalDistance,2)}")
             if abs(ball[1]) < self.goalWidth and ball2goalDistance < 1.5:
-                points = 500 # reward for being close to the goal
+                points = 500  * (2 - ball2goalDistance) # reward for being close to the goal
+                print("Almost goal!")
             else:
                 points = -1500 * ball2goalDistance
+                print(f"Ended due to time limit: {round(ball2goalDistance,2)}")
             
         # Dont forget to update the positions
         self.lastBallPos = ball
