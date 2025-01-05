@@ -50,6 +50,9 @@ class MyPenalty(gym.Env):
         self.goalWidth = 2
         self.kickerBackOffset = 0.5
         
+        
+        self.hasFallenLastIteration = False
+        
 
     # Gathers the current state of the agent and environment to form the observation vector
     def observe(self, init=False):
@@ -101,6 +104,7 @@ class MyPenalty(gym.Env):
         self.ballHasMoved = False
         self.initialBallPos = kick_pos
         self.lastBallPos = kick_pos
+        self.hasFallenLastIteration = False
         
         for _ in range(7):
             self.player.behavior.execute("Zero_Bent_Knees")
@@ -135,8 +139,6 @@ class MyPenalty(gym.Env):
 
         # =============== Check if the episode should be terminated =============== 
         
-        # terminate episode if the robot has fallen 
-        hasFallen = self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3
         
         # terminate episode if the episode has run for too long
         isOvertime = self.step_counter >= 1000
@@ -154,13 +156,13 @@ class MyPenalty(gym.Env):
         if farFromBall and not self.ballHasMoved:
             print(f"Episode terminated early due to distance ({round(dist2Ball,2)}) at step {self.step_counter}")
             
-        if hasFallen and not self.ballHasMoved:
+        if self.hasFallenLastIteration and not self.ballHasMoved:
             print(f"Episode terminated early due to fall at step {self.step_counter}")
 
         if isOvertime:
             print(f"Episode terminated early due to time at step {self.step_counter}")
             
-        terminate = hasFallen or isOvertime
+        terminate = self.hasFallenLastIteration or isOvertime
 
         return self.observe(), reward, terminate, {}
 
@@ -194,6 +196,7 @@ class MyPenalty(gym.Env):
             
         if (self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3) and not self.ballHasMoved:
             points -= 1000 # penalize falling before kicking the ball
+            self.hasFallenLastIteration = True
             
         if self.player.behavior.is_ready("Basic_Kick"):
             points += 100
