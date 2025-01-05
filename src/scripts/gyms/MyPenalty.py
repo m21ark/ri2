@@ -154,7 +154,7 @@ class MyPenalty(gym.Env):
         farFromBall = dist2Ball > 3
         
         if farFromBall and not self.ballHasMoved:
-            print(f"Episode terminated early due to distance ({round(dist2Ball,2)}) at step {self.step_counter}")
+            print(f"Episode terminated early due to distance ({round(dist2Ball,2)}) at step {self.step_counter} with ball pos {self.player.world.ball_abs_pos[:2]}")
             
         if self.hasFallenLastIteration and not self.ballHasMoved:
             print(f"Episode terminated early due to fall at step {self.step_counter}")
@@ -179,15 +179,17 @@ class MyPenalty(gym.Env):
             # Ball has moved towards the goal
             prev_dist = abs(np.linalg.norm(self.lastBallPos[:2] - self.goalPos))
             current_dist = abs(np.linalg.norm(self.player.world.ball_abs_pos[:2] - self.goalPos))
-            points += prev_dist - current_dist * 10
+            points += (prev_dist - current_dist)
             
         else: # Ball has not moved. Player should move towards the ball
-            prev_dist = abs(np.linalg.norm(self.lastPlayerPos[:2] - self.player.world.ball_abs_pos[:2]))
             current_dist = abs(np.linalg.norm(r.cheat_abs_pos[:2] - self.player.world.ball_abs_pos[:2]))
             if current_dist > 1:
                 points -= abs(current_dist) * 10 # penalize for moving away from the ball
             else:
-                points += 5
+                points += 0.1 # reward for moving towards the ball
+                
+                if self.player.behavior.is_ready("Basic_Kick"):
+                    points += 10
             
         # if the ball reaches the goal
         if self.player.world.ball_abs_pos[0] >= self.goalPos[0] and abs(self.player.world.ball_abs_pos[1]) < self.goalWidth:
@@ -197,9 +199,6 @@ class MyPenalty(gym.Env):
         if (self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3) and not self.ballHasMoved:
             points -= 1000 # penalize falling before kicking the ball
             self.hasFallenLastIteration = True
-            
-        if self.player.behavior.is_ready("Basic_Kick"):
-            points += 100
             
         # each step costs a little
         points -= 0.1
