@@ -42,7 +42,14 @@ class MyPenalty(gym.Env):
         self.lastPlayerPos =  np.array((0,0, self.player.world.robot.beam_height))
         self.lastAction = 0
         self.ballHasMoved = False
-        self.goalPos = np.array((-15,0))
+        
+        # ================ Start Position ================ #
+        
+        self.kickPos = [10, 0] # X, Y
+        self.goalPos = np.array((15,0)) # goal center position
+        self.goalWidth = 2
+        self.kickerBackOffset = 0.5
+        
 
     # Gathers the current state of the agent and environment to form the observation vector
     def observe(self, init=False):
@@ -50,15 +57,15 @@ class MyPenalty(gym.Env):
         r = self.player.world.robot
         
         # vector player to goal
-        goal_player_vec = self.goalPos - r.loc_head_position[:2]
+        self.goal_player_vec = self.goalPos - r.cheat_abs_pos[:2]
         
         # ==================== Setting the observation space ==================== 
         self.obs[:8] = np.concatenate((
             [self.step_counter / 100],                      # simple counter: 0,1,2,3...
             [self.lastAction],                              # Kicking or walking (0 or 1)
-            r.loc_head_position[:2] / 10.0,                 # Position of the player
-            self.player.world.ball_abs_pos[:2] / 10.0,      # Position of the ball
-            goal_player_vec / 10.0                          # Vector player pos to goal
+            r.cheat_abs_pos[:2],                            # Position of the player
+            self.player.world.ball_abs_pos[:2],             # Position of the ball
+            self.goal_player_vec                            # Vector player pos to goal
         ))
         self.obs[8] = r.imu_torso_orientation / 180.0      # absolute orientation in degrees
     
@@ -70,12 +77,14 @@ class MyPenalty(gym.Env):
         self.step_counter = 0
         r = self.player.world.robot
         
-        # Randomize the start pos
-        offsetDepth = 0 # np.random.uniform(-1.5, -0.5)
+        # Randomize the start pos: Negative gets away from the goal
+        offsetDepth = 0 # np.random.uniform(0, 1.5)
         ofssetWidth = 0 # np.random.uniform(-1.5, 1.5)
         
-        kick_pos = np.array((-(-10 + offsetDepth), ofssetWidth, 0))
-        self.lastPlayerPos =  np.array((kick_pos[0] - 0.5, -kick_pos[1], r.beam_height))
+        kick_pos = np.array((self.kickPos[0] + offsetDepth, self.kickPos[1] + ofssetWidth, 0))
+        self.lastPlayerPos =  np.array((kick_pos[0] - self.kickerBackOffset, kick_pos[1], r.beam_height))
+        
+        self.player.scom.unofficial_set_play_mode("PlayOn")
         
         # set player position
         for _ in range(25): 
@@ -130,9 +139,22 @@ class MyPenalty(gym.Env):
         hasFallen = self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3
         
         # terminate episode if the episode has run for too long
-        isOvertime = self.step_counter > 2500
+        isOvertime = self.step_counter >= 1000
+
+        dist2Ball = abs(np.linalg.norm(r.cheat_abs_pos[:2] - self.player.world.ball_abs_pos[:2]))    
         
-        if hasFallen:
+        # print("[Ball Pos]: ",self.player.world.ball_abs_pos[:2])
+        # print("[Player Pos]: ",r.cheat_abs_pos[:2])
+        # print("[Distance BP]: ",np.linalg.norm(r.cheat_abs_pos[:2] - self.player.world.ball_abs_pos[:2]))
+        # print("[Vector]: ", self.goal_player_vec)
+        # exit(0)
+        
+        farFromBall = dist2Ball > 3
+        
+        if farFromBall and not self.ballHasMoved:
+            print(f"Episode terminated early due to distance ({round(dist2Ball,2)}) at step {self.step_counter}")
+            
+        if hasFallen and not self.ballHasMoved:
             print(f"Episode terminated early due to fall at step {self.step_counter}")
 
         if isOvertime:
@@ -153,25 +175,25 @@ class MyPenalty(gym.Env):
         if (self.ballHasMoved or distanceMovedBall > 0.05): # Ball has moved
             self.ballHasMoved = True
             # Ball has moved towards the goal
-            prev_dist = np.linalg.norm(self.lastBallPos[:2] - self.goalPos)
-            current_dist = np.linalg.norm(self.player.world.ball_abs_pos[:2] - self.goalPos)
+            prev_dist = abs(np.linalg.norm(self.lastBallPos[:2] - self.goalPos))
+            current_dist = abs(np.linalg.norm(self.player.world.ball_abs_pos[:2] - self.goalPos))
             points += prev_dist - current_dist * 10
             
         else: # Ball has not moved. Player should move towards the ball
-            prev_dist = np.linalg.norm(self.lastPlayerPos[:2] - self.player.world.ball_abs_pos[:2])
-            current_dist = np.linalg.norm(r.loc_head_position[:2] - self.player.world.ball_abs_pos[:2])
+            prev_dist = abs(np.linalg.norm(self.lastPlayerPos[:2] - self.player.world.ball_abs_pos[:2]))
+            current_dist = abs(np.linalg.norm(r.cheat_abs_pos[:2] - self.player.world.ball_abs_pos[:2]))
             if current_dist > 1:
-                points -= abs(prev_dist - current_dist) * 10
+                points -= abs(current_dist) * 10 # penalize for moving away from the ball
             else:
                 points += 5
             
         # if the ball reaches the goal
-        if self.player.world.ball_abs_pos[0] < self.goalPos[0] and abs(self.player.world.ball_abs_pos[1]) < self.goalPos[1]:
+        if self.player.world.ball_abs_pos[0] >= self.goalPos[0] and abs(self.player.world.ball_abs_pos[1]) < self.goalWidth:
             points += 1000
             print("Goal!")
             
-        if self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3:
-            points -= 1000
+        if (self.player.behavior.is_ready("Get_Up") or r.loc_head_z < 0.3) and not self.ballHasMoved:
+            points -= 1000 # penalize falling before kicking the ball
             
         if self.player.behavior.is_ready("Basic_Kick"):
             points += 100
@@ -181,7 +203,7 @@ class MyPenalty(gym.Env):
 
         # Dont forget to update the positions
         self.lastBallPos = self.player.world.ball_abs_pos
-        self.lastPlayerPos = r.loc_head_position
+        self.lastPlayerPos = r.cheat_abs_pos
         return points
     
     # ================== Helper Functions ================== #
@@ -204,10 +226,10 @@ class Train(Train_Base):
     def train(self, args):
 
         #--------------------------------------- Learning parameters
-        n_envs = min(16, os.cpu_count())
+        n_envs = 8 # min(16, os.cpu_count())
         n_steps_per_env = 1024  # RolloutBuffer is of size (n_steps_per_env * n_envs)
         minibatch_size = 64    # should be a factor of (n_steps_per_env * n_envs)
-        total_steps = 3000000 # 0
+        total_steps = 1000000 # 30000000
         learning_rate = 3e-3
         folder_name = f'Penalty_Kick{self.robot_type}'
         model_path = f'./scripts/gyms/logs/{folder_name}/'
