@@ -5,9 +5,11 @@ import random
 
 class MyAgentDefender(Base_Agent):
     def __init__(self, host:str, agent_port:int, monitor_port:int, enable_log=False, enable_draw=False, wait_for_server=True, is_fat_proxy=False) -> None:
-        
         super().__init__(host, agent_port, monitor_port, 1, 0, "Defender", enable_log, enable_draw, False, wait_for_server, None)
         self.enable_draw = enable_draw
+        self.reset()
+        
+    def reset(self):
         self.state = "init"
         self.kick_dir = 0
         self.reset_kick = True
@@ -28,7 +30,7 @@ class MyAgentDefender(Base_Agent):
         ball_vec = ball_2d - my_head_pos_2d
         ball_dir = round(ball_2d[1] - my_head_pos_2d[1],2)
         ball_dist = round(np.linalg.norm(ball_vec),2)
-        ball_abs_vel = w.get_ball_abs_vel(6)[:2]
+        ball_abs_vel = w.get_ball_abs_vel(12)[:2]
         ball_speed = round(np.linalg.norm(ball_abs_vel),1)
         
         # =============== BEHAVIOR ===============
@@ -49,7 +51,7 @@ class MyAgentDefender(Base_Agent):
                 
          # --------------- wait for ball shot ---------------
         elif self.state == "normal":
-            if ball_speed > 3 and ball_dist < 3.5:
+            if ball_speed > 3 and ball_dist < 3 and abs(ball_dir) > 0.1:
                 self.state = "dive"
             
             # adjust current position to be in front of the ball
@@ -75,8 +77,8 @@ class MyAgentDefender(Base_Agent):
                 self.state = "normal" # get up is done
                 
         # if ball is stopped by the goalie, reset the state        
-        if ball_speed <= 0.05 and ball_dist < 0.9:
-            print("Ball stopped by goalie")
+        # if ball_speed <= 0.05 and ball_dist < 0.9:
+            # print("Ball stopped by goalie")
 
         # pubish to world
         self.radio.broadcast()

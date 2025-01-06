@@ -8,6 +8,7 @@ from scripts.commons.Train_Base import Train_Base
 from time import sleep
 import os, gym
 import numpy as np
+from MyAgentDefender import MyAgentDefender
 
 # This class implements an OpenAI custom gym. The main methods are:
 # - __init__: Initializes the environment
@@ -20,9 +21,13 @@ class MyPenalty(gym.Env):
         self.robot_type = r_type
         self.player = Agent(ip, server_p, monitor_p, 2, self.robot_type, "Gym", True, enable_draw)
         self.step_counter = 0 # to limit episode size
+        
+        
+        self.goalie = MyAgentDefender(ip, server_p, monitor_p)
+        
 
         # ================ State Space ================ #
-        obs_size = 8 # N-dimensional continuous space
+        obs_size = 10 # N-dimensional continuous space
         self.obs = np.zeros(obs_size, np.float32)
         self.observation_space = gym.spaces.Box(low=np.full(obs_size,-np.inf,np.float32), high=np.full(obs_size,np.inf,np.float32), dtype=np.float32)
 
@@ -44,7 +49,7 @@ class MyPenalty(gym.Env):
         
         # ================ Start Position ================ #
         
-        self.startKickPos = [10, 0] # X, Y
+        self.startKickPos = [11, 0] # X, Y
         self.goalPos = np.array((15,0)) # goal center position
         self.goalWidth = 1.5
         self.kickerBackOffset = 0.5
@@ -57,12 +62,13 @@ class MyPenalty(gym.Env):
         self.goal_player_vec = self.goalPos - r.cheat_abs_pos[:2]  # vector player to goal
         
         # ==================== Setting the observation space ==================== 
-        self.obs[:8] = np.concatenate((
+        self.obs[:10] = np.concatenate((
             [self.step_counter / 100],                      # simple counter: 0,1,2,3...
             [self.lastAction],                              # Kicking or walking (0 or 1)
             r.cheat_abs_pos[:2],                            # Position of the player
             self.player.world.ball_abs_pos[:2],             # Position of the ball
-            self.goal_player_vec                            # Vector player pos to goal
+            self.goal_player_vec,                           # Vector player pos to goal
+            self.goalie.world.robot.cheat_abs_pos[:2],      # Position of the goalie
         ))
     
         return self.obs
@@ -73,12 +79,15 @@ class MyPenalty(gym.Env):
         self.step_counter = 0
         r = self.player.world.robot
         
+        self.goalie.reset()
+        
         # Randomize the start pos: Negative gets away from the goal
-        offsetDepth = np.random.uniform(0, 1)
+        offsetDepth = np.random.uniform(-1, 0)
         ofssetWidth = np.random.uniform(-1.25, 1.25)
         
         newStartPos = np.array((self.startKickPos[0] + offsetDepth, self.startKickPos[1] + ofssetWidth, 0))
         self.currPos =  np.array((newStartPos[0] - self.kickerBackOffset, newStartPos[1], r.beam_height))
+        
         
         self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
         self.sync()
@@ -93,9 +102,12 @@ class MyPenalty(gym.Env):
         # set player position
         for _ in range(25): 
             self.player.scom.unofficial_beam([self.currPos[0], self.currPos[1], 0.5],0) 
+            self.goalie.scom.unofficial_beam((-14.5, 0, 0.5), 0)
             self.player.behavior.execute("Zero_Bent_Knees")
+            self.goalie.behavior.execute("Zero_Bent_Knees")
             self.sync()
             
+        self.goalie.scom.unofficial_beam((-14.5,0,r.beam_height), 0)
         self.player.scom.unofficial_beam(self.currPos,0) 
         r.joints_target_speed[0] = 0.01 # move head to trigger physics update
         self.sync()
@@ -203,12 +215,16 @@ class MyPenalty(gym.Env):
     def sync(self):
         r = self.player.world.robot
         self.player.scom.commit_and_send( r.get_command() )
-        self.player.scom.receive()       
+        self.goalie.think_and_send()
+        self.player.scom.receive()     
+        self.goalie.scom.receive()
+          
     def render(self, mode='human', close=False):
         return
     def close(self):
         Draw.clear_all()
         self.player.terminate()
+        self.goalie.terminate()
 
 # Don't change this class because it implements algorithms
 # to train a new model or test an existing model
