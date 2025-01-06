@@ -259,7 +259,7 @@ class Server_Comm():
         play_mode : str
             Play mode
         '''
-        print("Setting play mode to", play_mode)
+        # print("Setting play mode to", play_mode)
         msg = f"(playMode {play_mode})".encode()
         self.monitor_socket.send( (len(msg)).to_bytes(4,byteorder='big') + msg )
 

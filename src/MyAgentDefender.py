@@ -37,7 +37,7 @@ class MyAgentDefender(Base_Agent):
         # print(f"State: {self.state}, Ball Vec: {ball_vec}, Ball Dir: {ball_dir}, Ball Dist: {ball_dist}, Ball Speed: {ball_speed}")
         # print(f"Direction: {ball_dir}, Distance: {ball_dist}, Speed: {ball_speed}")
     
-        
+    
         # --------------- init state ---------------
         if self.state == "init":
             self.state_counter+=1
