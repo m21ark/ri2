@@ -8,6 +8,7 @@ from scripts.commons.Train_Base import Train_Base
 from time import sleep
 import os, gym
 import numpy as np
+from MyAgentDefender import MyAgentDefender
 
 # This class implements an OpenAI custom gym. The main methods are:
 # - __init__: Initializes the environment
@@ -20,6 +21,8 @@ class MyPenalty(gym.Env):
         self.robot_type = r_type
         self.player = Agent(ip, server_p, monitor_p, 2, self.robot_type, "Gym", True, enable_draw)
         self.step_counter = 0 # to limit episode size
+        
+        self.goalie = MyAgentDefender(ip, server_p, monitor_p)
 
         # ================ State Space ================ #
         obs_size = 8 # N-dimensional continuous space
@@ -73,6 +76,8 @@ class MyPenalty(gym.Env):
         self.step_counter = 0
         r = self.player.world.robot
         
+        self.goalie.reset()
+        
         # Randomize the start pos: Negative gets away from the goal
         offsetDepth = np.random.uniform(0, 1)
         ofssetWidth = np.random.uniform(-1.25, 1.25)
@@ -87,15 +92,19 @@ class MyPenalty(gym.Env):
         
         for _ in range(7):
             self.player.behavior.execute("Zero_Bent_Knees")
+            self.goalie.behavior.execute("Zero_Bent_Knees")
             self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
             self.sync()
         
         # set player position
         for _ in range(25): 
             self.player.scom.unofficial_beam([self.currPos[0], self.currPos[1], 0.5],0) 
+            self.goalie.scom.unofficial_beam((-14.5, 0, 0.5), 0)
             self.player.behavior.execute("Zero_Bent_Knees")
+            self.goalie.behavior.execute("Zero_Bent_Knees")
             self.sync()
             
+        self.goalie.scom.unofficial_beam((-14.5,0,r.beam_height), 0)
         self.player.scom.unofficial_beam(self.currPos,0) 
         r.joints_target_speed[0] = 0.01 # move head to trigger physics update
         self.sync()
@@ -189,7 +198,7 @@ class MyPenalty(gym.Env):
         if self.isOvertime:
             if abs(ball[1]) < self.goalWidth and ball2goalDistance < 1.5:
                 points = 500  * (2 - ball2goalDistance) # reward for being close to the goal
-                print("Almost goal!")
+                print("Almost...")
             else:
                 points = -1500 * ball2goalDistance
                 print(f"Ended due to time limit: {round(ball2goalDistance,2)}")
@@ -203,12 +212,15 @@ class MyPenalty(gym.Env):
     def sync(self):
         r = self.player.world.robot
         self.player.scom.commit_and_send( r.get_command() )
-        self.player.scom.receive()       
+        self.goalie.think_and_send()
+        self.player.scom.receive()     
+        self.goalie.scom.receive()   
     def render(self, mode='human', close=False):
         return
     def close(self):
         Draw.clear_all()
         self.player.terminate()
+        self.goalie.terminate()
 
 # Don't change this class because it implements algorithms
 # to train a new model or test an existing model
@@ -222,7 +234,7 @@ class Train(Train_Base):
         n_envs = 8 # min(16, os.cpu_count())
         n_steps_per_env = 1024  # RolloutBuffer is of size (n_steps_per_env * n_envs)
         minibatch_size = 64    # should be a factor of (n_steps_per_env * n_envs)
-        total_steps = 1000000 # 30000000
+        total_steps = 2000000 # 30000000
         learning_rate = 3e-3
         folder_name = f'Penalty_Kick{self.robot_type}'
         model_path = f'./scripts/gyms/logs/{folder_name}/'
