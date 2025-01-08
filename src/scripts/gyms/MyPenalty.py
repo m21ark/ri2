@@ -22,9 +22,7 @@ class MyPenalty(gym.Env):
         self.player = Agent(ip, server_p, monitor_p, 2, self.robot_type, "Gym", True, enable_draw)
         self.step_counter = 0 # to limit episode size
         
-        
         self.goalie = MyAgentDefender(ip, server_p, monitor_p)
-        
 
         # ================ State Space ================ #
         obs_size = 10 # N-dimensional continuous space
@@ -99,7 +97,8 @@ class MyPenalty(gym.Env):
             self.goalie.behavior.execute("Zero_Bent_Knees")
             self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
             self.sync()
-        
+        offsetDepth = 0 # np.random.uniform(-1, 0)
+        ofssetWidth = 0 # np.random.uniform(-1.25, 1.25)
         # set player position
         for _ in range(25): 
             self.player.scom.unofficial_beam([self.currPos[0], self.currPos[1], 0.5],0) 
@@ -132,7 +131,7 @@ class MyPenalty(gym.Env):
     def step(self, action):
             
         # Unpack the actions
-        isKickOrwalk = action[0] > 0.5
+        isKickOrwalk = action[0] > 0.3
         kick_direction = action[1]
         walk_distance = action[2]
         walk_orientation = action[3]
@@ -168,14 +167,17 @@ class MyPenalty(gym.Env):
         player2ballDistance = abs(np.linalg.norm(ball - player))
         ball2goalDistance = abs(np.linalg.norm(ball - self.goalPos))
         self.ballHasMoved = np.linalg.norm(self.lastBallPos[:2] - self.initialBallPos[:2]) > 0.1
+        
+        if (self.player.behavior.is_ready("Walk")):
+            points -= 3
             
         if player2ballDistance > 1 and not self.ballHasMoved:
-            points -= abs(player2ballDistance) * 200 # penalize for moving away from the ball without a kick happening
+            points -= abs(player2ballDistance) * 350 # penalize for moving away from the ball without a kick happening
         else:
-            points += 0.5 # reward for staying close to the ball
+            points += 1 # reward for staying close to the ball
             
         if not self.ballHasMoved:
-            points -= 5 # penalize for not kicking the ball
+            points -= 10 # penalize for not kicking the ball
 
         # =============== Check if the episode should be terminated =============== 
         
@@ -183,29 +185,39 @@ class MyPenalty(gym.Env):
         self.wasGoal = self.player.world.M_OUR_GOAL == self.player.world.play_mode
         if self.wasGoal:
             print("Goal!")
-            points = 2500 + max(0, 5 - abs(ball[1])) * 250 # the closer to the center of the goal, the more points
+            points = 2500
+            
+            # points for shooting far from the goalie
+            goaliePos = self.goalie.world.robot.cheat_abs_pos[:2]
+            goalie2ballDistance = abs(np.linalg.norm(ball - goaliePos))
+            points += 1500 * goalie2ballDistance
             
         # check of ball was out of bounds
         self.isOutOfBounds = self.player.world.M_THEIR_GOAL_KICK == self.player.world.play_mode
         if self.isOutOfBounds:
             print(f"Ended due to ball out of bounds")
-            points = -150 * abs(ball[1])
+            points = -100 * abs(ball[1])
         
         # terminate episode if the player has fallen
         self.hasFallenLastIteration = r.loc_head_z < 0.3 and not self.ballHasMoved
         if self.hasFallenLastIteration:
             print(f"Ended due to fall")
             points = -2000
-            
+
         # terminate episode if the episode has run for too long
         self.isOvertime = self.step_counter >= 500
         if self.isOvertime:
+            
             if abs(ball[1]) < self.goalWidth and ball2goalDistance < 1.5:
                 points = 500  * (2 - ball2goalDistance) # reward for being close to the goal
                 print("Almost...")
             else:
                 points = -1500 * ball2goalDistance
-                print(f"Ended due to time limit: {round(ball2goalDistance,2)}")
+                print(f"Ended due to time limit: {round(ball2goalDistance,2)} | ({round(player[0],1)} ,{round(player[1],1)})")
+                
+            # points for shooting within the goal width
+            if abs(ball[1]) < self.goalWidth:
+                points += 500  * (2 - ball2goalDistance)
             
         # Dont forget to update the positions
         self.lastBallPos = ball
