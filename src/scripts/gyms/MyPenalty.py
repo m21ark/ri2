@@ -96,6 +96,7 @@ class MyPenalty(gym.Env):
         
         for _ in range(7):
             self.player.behavior.execute("Zero_Bent_Knees")
+            self.goalie.behavior.execute("Zero_Bent_Knees")
             self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
             self.sync()
         
@@ -201,7 +202,7 @@ class MyPenalty(gym.Env):
         if self.isOvertime:
             if abs(ball[1]) < self.goalWidth and ball2goalDistance < 1.5:
                 points = 500  * (2 - ball2goalDistance) # reward for being close to the goal
-                print("Almost goal!")
+                print("Almost...")
             else:
                 points = -1500 * ball2goalDistance
                 print(f"Ended due to time limit: {round(ball2goalDistance,2)}")
@@ -238,7 +239,7 @@ class Train(Train_Base):
         n_envs = 8 # min(16, os.cpu_count())
         n_steps_per_env = 1024  # RolloutBuffer is of size (n_steps_per_env * n_envs)
         minibatch_size = 64    # should be a factor of (n_steps_per_env * n_envs)
-        total_steps = 1000000 # 30000000
+        total_steps = 2000000 # 30000000
         learning_rate = 3e-3
         folder_name = f'Penalty_Kick{self.robot_type}'
         model_path = f'./scripts/gyms/logs/{folder_name}/'

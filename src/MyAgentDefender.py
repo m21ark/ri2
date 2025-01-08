@@ -51,7 +51,7 @@ class MyAgentDefender(Base_Agent):
                 
          # --------------- wait for ball shot ---------------
         elif self.state == "normal":
-            if ball_speed > 3 and ball_dist < 3 and abs(ball_dir) > 0.1:
+            if ball_speed > 3 and ball_dist < 3: # and abs(ball_dir) > 0.1:
                 self.state = "dive"
             
             # adjust current position to be in front of the ball
