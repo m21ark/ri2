@@ -97,8 +97,7 @@ class MyPenalty(gym.Env):
             self.goalie.behavior.execute("Zero_Bent_Knees")
             self.player.scom.unofficial_move_ball(newStartPos, (0,0,0))
             self.sync()
-        offsetDepth = 0 # np.random.uniform(-1, 0)
-        ofssetWidth = 0 # np.random.uniform(-1.25, 1.25)
+
         # set player position
         for _ in range(25): 
             self.player.scom.unofficial_beam([self.currPos[0], self.currPos[1], 0.5],0) 
