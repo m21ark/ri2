@@ -11,46 +11,29 @@ Tasks:
 
 ![Start Position](https://github.com/user-attachments/assets/461399c6-cce9-4544-8750-e4654715330a)
 
-![Spawning Positions](https://github.com/user-attachments/assets/e2c04fdf-1230-4dca-93e4-39fe5f643571)
-
-### Heuristic-based Defender
-
-![State Machine](https://github.com/user-attachments/assets/d9d9d3da-86dd-4cdf-99c9-43e223ee0405)
-
-**Ball Tracking (Default State):** Agent moves sideways to place itself between the ball and the goal
-
-**Diving Defense:** Agent dives sideways to defend based on the ball’s speed and direction
-
-![Dive Defense](https://github.com/user-attachments/assets/4a723a23-84b4-44b1-b1ef-e7d1aa9807a6)
-
-### RL Attacker Agent
-
-TODO
-
 ## How to Run
 
-### Script
+### To Test the Models
 
-Run the command to startup all needed services and then close them with CTRL+C:
+There are three penalty scripts
 
-```
-> bash setup.sh
-```
-
-### Manual approach
-
-- Open 3 terminals, and in 2 of them run the following commands:
+In the `src/robotViz/bin` run the code below to open the Simulator UI:
 
 ```
-> rcssserver3d
-> cd src/robotViz/bin && sh roboviz.sh
+> sh roboviz.sh
 ```
 
-- The last command is the script of what you want to run. A possibility is:
+Then, with the UI running, in `src/` run:
 
 ```
-> python3 src/Run_One_vs_One.py
+> python3 run_utils.py
 ```
+
+In the menu choose which task you want to run (nº 18 - 20) and then select to test with the best model.
+
+For both `MyPenalty_1` and `MyPenalty_2`, the best model is `T1_Best_No_Goalie`. 
+
+For `MyPenalty_3`, the best model is `T3_Best_With_Goalie`.
 
 ### Troubleshooting
 

@@ -34,12 +34,7 @@ class MyAgentDefender(Base_Agent):
         ball_speed = round(np.linalg.norm(ball_abs_vel),1)
         
         # =============== BEHAVIOR ===============
-        
-                
-        # print(f"State: {self.state}, Ball Vec: {ball_vec}, Ball Dir: {ball_dir}, Ball Dist: {ball_dist}, Ball Speed: {ball_speed}")
-        # print(f"Direction: {ball_dir}, Distance: {ball_dist}, Speed: {ball_speed}")
-    
-    
+
         # --------------- init state ---------------
         if self.state == "init":
             self.state_counter+=1
@@ -75,10 +70,6 @@ class MyAgentDefender(Base_Agent):
             
             if behavior.execute("Get_Up"):
                 self.state = "normal" # get up is done
-                
-        # if ball is stopped by the goalie, reset the state        
-        # if ball_speed <= 0.05 and ball_dist < 0.9:
-            # print("Ball stopped by goalie")
 
         # pubish to world
         self.radio.broadcast()
