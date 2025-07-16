@@ -2,7 +2,7 @@
 
 ## Project
 
-Penalty Shooting Scenario using RL in RoboCup 3D Simulation.
+Penalty Shooting Scenario using Reinforcement Learning in RoboCup 3D Simulation.
 
 Tasks:
 
@@ -10,6 +10,12 @@ Tasks:
 - Develop a basic heuristic-based goalie to defend the kicks
 
 ![Start Position](https://github.com/user-attachments/assets/461399c6-cce9-4544-8750-e4654715330a)
+
+See a demo of this project on Youtube:
+
+[![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=fjvVxMVGUtA)
+
+Or, alternatively, read our [scientific paper](delivery/sci_paper/paper.pdf) on the project.
 
 ## How to Run
 
